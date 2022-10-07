@@ -1,0 +1,20 @@
+.nav {
+    background-color: $main-background-color;
+}
+
+.hero__title {
+    color: $text-color-light;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    line-height: 1.27;
+    font-weight: normal;
+
+    @media screen and (max-width: 480px) {
+        max-width: 247px;
+    }
+}
+
+.hero__bigger-part {
+    font-size: 34px;
+    line-height: 96.5%;
+}
