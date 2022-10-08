@@ -1,48 +1,7 @@
-html {
-    cursor: url('../images/hero-header/Vector.png'), auto;
-}
 
-button {
-    cursor: url('../images/hero-header/Vector.png'), auto;
-}
-
-.nav {
-    background-color: $main-background-color;
-    display: flex;
-}
-
-.nav__menu-button {
-    border: none;
-    background-color: transparent;
-    margin-left: auto;
-    margin-top: auto;
-
-    @media screen and (min-width: 1200px) {
-        display: none;
-    }
-
-    .nav__close-menu {
-        display: none;
-    }
-}
-
-.nav__menu-button.is-open {
-    & .nav__close-menu{
-        display: block;
-    }
-    
-    & .nav__open-menu {
-        display: none;
-    }
-}
 
 .nav__mobile-menu {
     margin-right: auto;
-}
-
-.nav__logo {
-    padding-top: 12px;
-    padding-left: 22px;
 }
 
 .hero {
@@ -74,52 +33,6 @@ button {
     margin-top: 32px;
     gap: 8px;
 }
-
-.hero__button-products { 
-    text-decoration: none;
-    padding: 7px 12px;
-    color: $text-color-dark;
-    font-size: 8px;
-    line-height: 1.25;
-    font-weight: 600;
-    border: 2px solid $secondary-background-color;
-    border-radius: 10px;
-    background-color: transparent;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover {
-        border: 2px solid $hover-color;
-    }
-
-    &:focus {
-        border: 2px solid $hover-color;
-        color: $text-color-light;
-        outline: transparent;
-    }
-}
-
-.hero__button-how {
-    padding: 7px 12px;
-    color: $secondary-background-color;
-    font-size: 8px;
-    line-height: 1.25;
-    font-weight: 600;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    border-radius: 10px;
-    background-color: transparent;
-    border: none;
-
-    &:hover {
-        color: $hover-color;
-    }
-
-    &:focus {
-        color: $text-color-light;
-        outline: transparent;
-    }
-}
-
 
 .hero__image-circles {
 
