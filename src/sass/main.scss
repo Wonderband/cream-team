@@ -3,9 +3,12 @@
 @import './base/base-options';
 @import './base/animations';
 
+@import './components/logo';
 @import './components/buttons';
 @import './components/container';
 @import './components/titles';
+@import './components/navigation';
+
 
 @import './layout/about';
 @import './layout/advantages';
