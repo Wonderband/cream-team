@@ -1,21 +1,66 @@
 <header class="header">
-  <div class="container nav"></div>
+  <section class="section">
+    <div class="container nav">
+      <img
+        class="nav__logo"
+        src="./images/hero-header/logo.png"
+        alt="ice cream logo"
+        loading="lazy"
+      />
+      <button class="nav__menu-button is-open" data-mobile__menu-open>
+        <svg
+          class="nav__mobile-menu"
+          width="32"
+          height="32"
+          aria-label="Вызов мобильного меню"
+        >
+          <use
+            class="nav__open-menu"
+            href="./images/icons.svg#icon-open-mobile-menu"
+          ></use>
+          <use
+            class="nav__close-menu"
+            href="./images/icons.svg#icon-close-mobile-menu"
+          ></use>
+        </svg>
+      </button>
+      <div class="navigation" id="mobile__menu-body" data-mobile__menu></div>
+    </div>
+  </section>
 </header>
 
-<section class="section hero">
-  <div class="container">
+<section class="section">
+  <div class="container hero">
     <h1 class="hero__title">
       ICE CREAM MADE WITH <span class="hero__bigger-part">PASSION</span>
     </h1>
     <ul class="hero__list">
       <li class="hero__item">
-        <button type="button" class="hero__link-products" href="">
+        <button type="button" class="hero__button-products" href="">
           Products
         </button>
       </li>
       <li class="hero__item">
-        <button type="button" class="hero__link-how" href="">
+        <button type="button" class="hero__button-how" href="">
           How it’s made?
+          <ul class="hero__image-list">
+            <li class="hero__image-item">
+              <img
+                class="hero__image-circles"
+                src="./images/hero-header/ice-cream-frame.png"
+                alt="beautiful yellow circles"
+                loading="lazy"
+              />
+            </li>
+            <li class="hero__image-item">
+              <img
+                class="hero__image-ice"
+                src="./images/hero-header/ice-cream-header.png"
+                alt="ice cream image"
+                loading="lazy"
+              />
+            </li>
+          </ul>
         </button>
       </li>
     </ul>
