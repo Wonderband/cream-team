@@ -1,0 +1,80 @@
+.nav {
+  background-color: $main-background-color;
+}
+
+.hero {
+  padding-top: 61px;
+  padding-bottom: 239px;
+  padding-left: 20px;
+}
+
+.hero__title {
+  color: $text-color-light;
+  font-family: $font-family-secondary;
+  font-size: 26px;
+  line-height: 1.27;
+  font-weight: normal;
+
+  @media screen and (max-width: 767px) {
+    max-width: 247px;
+  }
+}
+
+.hero__bigger-part {
+  font-size: 34px;
+  line-height: 96.5%;
+}
+
+.hero__list {
+  display: flex;
+  margin-top: 32px;
+  gap: 8px;
+}
+
+.hero__link-products {
+  text-decoration: none;
+  padding: 7px 12px;
+  color: $text-color-dark;
+  cursor: pointer;
+  font-size: 8px;
+  line-height: 1.25;
+  font-weight: 600;
+  border: 2px solid $secondary-background-color;
+  border-radius: 10px;
+  background-color: transparent;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    border: 2px solid $hover-color;
+  }
+
+  &:focus {
+    border: 2px solid $hover-color;
+    color: $text-color-light;
+    outline: transparent;
+  }
+}
+
+.hero__link-how {
+  padding: 7px 12px;
+  color: $secondary-background-color;
+  cursor: pointer;
+  font-size: 8px;
+  line-height: 1.25;
+  font-weight: 600;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:focus {
+    color: $text-color-light;
+    outline: transparent;
+  }
+}

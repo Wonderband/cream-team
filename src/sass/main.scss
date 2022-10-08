@@ -1,24 +1,20 @@
-@import './common';
+@import './base/variables';
+@import './base/common';
+@import './base/base-options';
+@import './base/animations';
 
-@import './utils/variables';
+@import './components/buttons';
+@import './components/container';
+@import './components/titles';
 
-@import './base-options';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/contacts';
+@import './layout/customer-reviews';
+@import './layout/example';
+@import './layout/footer';
+@import './layout/gallery';
+@import './layout/hero-header';
+@import './layout/products';
 
-@import './about';
-@import './advantages';
-@import './contacts';
-@import './customer-reviews';
-@import './footer';
-@import './gallery';
-@import './hero-header';
-@import './products';
-
-
-
-
-
-
-
-@import './example';
-
-
+@import './utils/visually-hidden';
