@@ -1,80 +1,152 @@
+html {
+    cursor: url('../images/hero-header/Vector.png'), auto;
+}
+
+button {
+    cursor: url('../images/hero-header/Vector.png'), auto;
+}
+
 .nav {
-  background-color: $main-background-color;
+    background-color: $main-background-color;
+    display: flex;
+}
+
+.nav__menu-button {
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    margin-top: auto;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
+    .nav__close-menu {
+        display: none;
+    }
+}
+
+.nav__menu-button.is-open {
+    & .nav__close-menu{
+        display: block;
+    }
+    
+    & .nav__open-menu {
+        display: none;
+    }
+}
+
+.nav__mobile-menu {
+    margin-right: auto;
+}
+
+.nav__logo {
+    padding-top: 12px;
+    padding-left: 22px;
 }
 
 .hero {
-  padding-top: 61px;
-  padding-bottom: 239px;
-  padding-left: 20px;
+    padding-top: 61px;
+    padding-bottom: 239px;
+    padding-left: 20px;
+    position: relative;
 }
 
 .hero__title {
-  color: $text-color-light;
-  font-family: $font-family-secondary;
-  font-size: 26px;
-  line-height: 1.27;
-  font-weight: normal;
+    color: $text-color-light;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    line-height: 1.27;
+    font-weight: normal;
 
-  @media screen and (max-width: 767px) {
-    max-width: 247px;
-  }
+    @media screen and (max-width: 767px) {
+        max-width: 247px;
+    }
 }
 
 .hero__bigger-part {
-  font-size: 34px;
-  line-height: 96.5%;
+    font-size: 34px;
+    line-height: 96.5%;
 }
 
 .hero__list {
-  display: flex;
-  margin-top: 32px;
-  gap: 8px;
+    display: flex;
+    margin-top: 32px;
+    gap: 8px;
 }
 
-.hero__link-products {
-  text-decoration: none;
-  padding: 7px 12px;
-  color: $text-color-dark;
-  cursor: pointer;
-  font-size: 8px;
-  line-height: 1.25;
-  font-weight: 600;
-  border: 2px solid $secondary-background-color;
-  border-radius: 10px;
-  background-color: transparent;
+.hero__button-products { 
+    text-decoration: none;
+    padding: 7px 12px;
+    color: $text-color-dark;
+    /*cursor: pointer;*/
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    border: 2px solid $secondary-background-color;
+    border-radius: 10px;
+    background-color: transparent;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:hover {
-    border: 2px solid $hover-color;
-  }
+    &:hover {
+        border: 2px solid $hover-color;
+    }
 
-  &:focus {
-    border: 2px solid $hover-color;
-    color: $text-color-light;
-    outline: transparent;
-  }
+    &:focus {
+        border: 2px solid $hover-color;
+        color: $text-color-light;
+        outline: transparent;
+    }
 }
 
-.hero__link-how {
-  padding: 7px 12px;
-  color: $secondary-background-color;
-  cursor: pointer;
-  font-size: 8px;
-  line-height: 1.25;
-  font-weight: 600;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 10px;
-  background-color: transparent;
-  border: none;
+.hero__button-how {
+    padding: 7px 12px;
+    color: $secondary-background-color;
+    /*cursor: pointer;*/
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
 
-  &:hover {
-    color: $hover-color;
-  }
+    &:hover {
+        color: $hover-color;
+    }
 
-  &:focus {
-    color: $text-color-light;
-    outline: transparent;
-  }
+    &:focus {
+        color: $text-color-light;
+        outline: transparent;
+    }
+}
+
+
+
+/*.hero__image-list {
+    
+}
+
+.hero__image-item {
+    
+}*/
+
+.hero__image-circles {
+
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+    
+}
+
+.hero__image-ice {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        bottom: -53px;
+        left: 30px;
+        pointer-events: none;
+    }
 }
