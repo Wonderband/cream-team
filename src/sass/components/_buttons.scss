@@ -1,0 +1,26 @@
+.button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  /* identical to box height, or 129% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #131313;
+  background: #f8d24e;
+  border-radius: 10px;
+}
+
+// Кнока к хедеру
+.botton--header {
+  line-height: 17px;
+}
+
+.botton--transparent {
+  border-color: #f8d24e;
+  background-color: transparent;
+}
