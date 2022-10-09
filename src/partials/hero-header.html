@@ -2,29 +2,54 @@
   <section class="section">
     <div class="container nav">
       <img
-        class="nav__logo"
+        class="company__logo"
         src="./images/hero-header/logo.png"
         alt="ice cream logo"
         loading="lazy"
       />
-      <button class="nav__menu-button is-open" data-mobile__menu-open>
+      <button
+        type="button"
+        class="button__menu is-open"
+        data-mobile__menu-open
+        aria-controls="mobile__menu-body"
+      >
         <svg
-          class="nav__mobile-menu"
+          class="button__menu-icons"
           width="32"
           height="32"
           aria-label="Вызов мобильного меню"
         >
           <use
-            class="nav__open-menu"
+            class="button__menu-open"
             href="./images/icons.svg#icon-open-mobile-menu"
           ></use>
           <use
-            class="nav__close-menu"
+            class="button__menu-close"
             href="./images/icons.svg#icon-close-mobile-menu"
           ></use>
         </svg>
       </button>
-      <div class="navigation" id="mobile__menu-body" data-mobile__menu></div>
+
+      <div class="nav__menu" id="mobile__menu-body" data-mobile__menu>
+        <nav class="nav__body">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+            <li class="nav__item">
+              <a href="" class="nav__link">How it’s made?</a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">Our products</a>
+            </li>
+            <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+          </ul>
+          <button type="button" class="nav__button-buy">
+            Buy now
+            <svg class="nav__icon-buy" width="12" height="12">
+              <use href="./images/icons.svg#buy-icon"></use>
+            </svg>
+          </button>
+        </nav>
+      </div>
     </div>
   </section>
 </header>

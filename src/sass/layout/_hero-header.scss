@@ -1,54 +1,128 @@
-html {
-    cursor: url('../images/hero-header/Vector.png'), auto;
+button {
+    cursor: url('../images/hero-header/vector.png'), auto;
 }
 
-button {
-    cursor: url('../images/hero-header/Vector.png'), auto;
-}
+
+
+// ХЕДЕР
+
+
 
 .nav {
-    background-color: $main-background-color;
     display: flex;
 }
 
-.nav__menu-button {
-    border: none;
+.company__logo {
+    padding-top: 12px;
+    z-index: 2;
+}
+
+.button__menu {
+    z-index: 2;
+    border: transparent;
     background-color: transparent;
     margin-left: auto;
     margin-top: auto;
+    padding: 0;
 
     @media screen and (min-width: 1200px) {
         display: none;
     }
-
-    .nav__close-menu {
+// ЗАДАЙ ОПАСИТИ И ПЛАНЙ ПЕРЕХОД
+    .button__menu-open {
         display: none;
     }
 }
 
-.nav__menu-button.is-open {
-    & .nav__close-menu{
-        display: block;
-    }
-    
-    & .nav__open-menu {
+.button__menu.is-open {
+    & .button__menu-open {
+            display: block;
+        }
+
+    & .button__menu-close{
         display: none;
     }
 }
 
-.nav__mobile-menu {
+.nav__menu {
+    z-index: 1;
+
+    &.is-open {
+        transform: translateX(0);
+    }
+
+    @media screen and (max-width: 1199px) {
+        background-color: $main-background-color;
+        position: fixed;
+        transform: translateX(100%);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 100px 23px 0px 23px;
+        transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.nav__item {
+    margin-top: 32px;
+    text-align: center;
+
+    &:first-child {
+        margin-top: 0;
+    }
+}
+
+.nav__link {
+    cursor: url('../images/hero-header/vector.png'), auto;
+    text-decoration: none;
+    color: $modal-background-color;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.22;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: $text-color-dark;
+    }
+
+    &:focus {
+        color: $text-color-dark;
+        outline: transparent;
+    }
+}
+
+.nav__button-buy {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
     margin-right: auto;
+    outline: transparent;
+    border: none;
+    background-color: $accent-color;
+    border-radius: 10px;
+
+    padding: 12px 34px;
+    margin-top: 111px;
+
+    color: $text-color-dark;
+    font-weight: 600;
+    line-height: 1.21;
 }
 
-.nav__logo {
-    padding-top: 12px;
-    padding-left: 22px;
+.nav__icon-buy {
+    margin-left: 7px;
 }
+
+
+
+// HERO
+
+
 
 .hero {
-    padding-top: 61px;
+    padding-top: 58px;
     padding-bottom: 239px;
-    padding-left: 20px;
     position: relative;
 }
 
@@ -58,10 +132,6 @@ button {
     font-size: 26px;
     line-height: 1.27;
     font-weight: normal;
-
-    @media screen and (max-width: 767px) {
-        max-width: 247px;
-    }
 }
 
 .hero__bigger-part {
@@ -76,13 +146,12 @@ button {
 }
 
 .hero__button-products { 
-    text-decoration: none;
     padding: 7px 12px;
     color: $text-color-dark;
     font-size: 8px;
     line-height: 1.25;
     font-weight: 600;
-    border: 2px solid $secondary-background-color;
+    border: 2px solid $accent-color;
     border-radius: 10px;
     background-color: transparent;
 
@@ -101,7 +170,7 @@ button {
 
 .hero__button-how {
     padding: 7px 12px;
-    color: $secondary-background-color;
+    color: $accent-color;
     font-size: 8px;
     line-height: 1.25;
     font-weight: 600;
@@ -120,7 +189,6 @@ button {
     }
 }
 
-
 .hero__image-circles {
 
     @media screen and (max-width: 767px) {
@@ -128,7 +196,6 @@ button {
         bottom: 0%;
         left: 0%;
     }
-    
 }
 
 .hero__image-ice {
@@ -139,3 +206,15 @@ button {
         pointer-events: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
