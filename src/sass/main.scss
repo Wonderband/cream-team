@@ -1,3 +1,6 @@
+@import './utils/visually-hidden';
+@import './utils/mixins';
+
 @import './base/variables';
 @import './base/common';
 @import './base/base-options';
@@ -20,4 +23,4 @@
 @import './layout/hero-header';
 @import './layout/products';
 
-@import './utils/visually-hidden';
+

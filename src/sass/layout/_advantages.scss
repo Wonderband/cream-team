@@ -1,0 +1,55 @@
+.advantages__section {
+    min-width: 320px;
+    max-width: 1600px;
+    background-color: $advantages__bg-color;
+}
+
+.advantages__container {
+    padding: 0 45px;
+}
+
+.advantages__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+    // margin: 108px auto 36px;
+}
+
+.advantages__item {
+    color: $text-color-light;  
+}
+
+.advantages__header {
+    font-family: $font-family-simple;
+    @include text-design(700, 36px, 42px, 0.04em);      
+    margin-bottom: 18px;
+}
+
+.advantages__header::before {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 50px;
+    height:50px;
+    background-size: contain;    
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+}
+
+.advantages__header.cow::before {
+    background-image: url("../images/advantages/cow.png");
+}
+
+.advantages__header.weight::before {
+    background-image: url("../images/advantages/weight.png");
+}
+
+.advantages__header.ice-cream::before{
+    background-image: url("../images/advantages/icecream.png");
+}
+
+.advantages__description {
+    @include text-design(700, 12px, 20px, 0.04em);
+}
+
