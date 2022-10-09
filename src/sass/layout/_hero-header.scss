@@ -136,11 +136,33 @@ button {
     font-size: 26px;
     line-height: 1.27;
     font-weight: normal;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.28;
+        max-width: 181px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+        max-width: 367px;
+    }
 }
 
 .hero__bigger-part {
     font-size: 34px;
     line-height: 96.5%;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 0.54;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+    }
 }
 
 .hero__list {
