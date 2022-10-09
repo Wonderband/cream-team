@@ -6,15 +6,51 @@
 .about__container {
     padding-top: 60px;
     padding-bottom: 21px;
+
+    @media screen and (min-width:768px) {
+        padding-bottom: 26px;
+    }
+}
+
+.about__content {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+    }
+
+    @media screen and (min-width:1200px) {
+        align-items: center;
+    }
 }
 
 .about__image {
     height: 303px;
+    width: 280px;
     margin-bottom: 40px;
     background-image: url(../images/about/about_sm.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
     background-size: contain;
+
+    @media screen and (min-width:768px) {
+        height: 356px;
+        width: 336px;
+        background-image: url(../images/about/about_md.png);
+        margin-bottom: 0px;
+        background-position: 0 0;
+        margin-right: 32px;
+    }
+
+    @media screen and (min-width:1200px) {
+        height: 529px;
+        width: 500px;
+        background-image: url(../images/about/about_lg.png);
+        margin-bottom: 0px;
+        background-position: 0 0;
+        margin-right: 100px;
+    }
 }
 
 .about__info {
@@ -30,13 +66,39 @@
     text-align: center;
     letter-spacing: 0.04em;
 
-    color: #fcfcfc;
+    color: $text-color-light;
+
+    @media screen and (min-width:768px) {
+        width: 334px;
+        text-align: start;
+        margin-bottom: 48px;
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 16px;
+        width: 463px;
+    }
 }
 
 .about__item {
-    &:first-child {
+    &:not(:last-child) {
         margin-bottom: 4px;
     }
+
+    &:last-child {
+        display: none;
+    }
+
+    @media screen and (min-width:768px) {
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        &:last-child {
+            display: block;
+        }
+    }
+
 }
 
 .about__icon {

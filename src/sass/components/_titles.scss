@@ -1,21 +1,22 @@
 .title {
-    font-family: $font-family-secondary;
-    color: $text-color-light;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: calc(38 / 30);
-    text-align: center;
-    text-transform: uppercase;
+  font-family: $font-family-secondary;
+  color: $text-color-light;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-        font-size: 34px;
-        line-height: calc(43 / 34);
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        line-height: calc(45 / 36);
-        letter-spacing: 0.06em;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+  }
 }
 
 .title--accent {
@@ -24,22 +25,23 @@
   font-size: 36px;
   line-height: 45px;
 
-    font-family: $font-family-main;
-    color: $text-color-light;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    text-align: center;
-    text-transform: uppercase;
+  font-family: $font-family-main;
+  color: $text-color-light;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
 
-    @media screen and (min-width: 768px) {
-        font-size: 22px;
-        line-height: calc(27 / 22);
-    }
-    @media screen and (min-width: 1200px) {
-        font-weight: 800;
-        font-size: 30px;
-        line-height: calc(37 / 30);
-    }
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
 }
 
 .title__about--label {
@@ -54,6 +56,17 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
+
+  @media screen and (min-width:768px) {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .title__about--topic {
@@ -72,6 +85,20 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
+
+  @media screen and (min-width:768px) {
+    width: 100%;
+    font-size: 34px;
+    line-height: 1.26;
+    letter-spacing: 0.06em;
+  }
+
+  @media screen and (min-width:1200px) {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+
 }
 
 .title--footer {
