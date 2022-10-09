@@ -1,92 +1,104 @@
 .button {
-  text-decoration: none;
-  font-family: $font-family-main;
-  font-weight: 600;
-  line-height: calc(18 / 14);
-  cursor: url('../images/hero-header/Vector.png'), auto;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
+    text-decoration: none;
+    font-family: $font-family-main;
+    font-weight: 600;
+    line-height: calc(18 / 14);
+    cursor: url('../images/hero-header/Vector.png'), auto;
 
-  color: $text-color-dark;
-  background: $accent-color;
-  border-radius: 10px;
-
-  transition: color $main-animation, border $main-animation;
-
-  &:hover {
-    border: 2px solid $hover-color;
-  }
-
-  &:focus {
-    border: 2px solid $hover-color;
-    color: $text-color-light;
-    outline: transparent;
-    }
-  }
-
-
-.button__burger {
-  display: flex;
-  align-items: center;
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  margin-left: auto;
-  outline: none;
-  cursor: url('../images/hero-header/Vector.png'), auto;
-
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
-
-  .button__burger--close {
-    display: none;
-  }
+    color: #131313;
+    background: #f8d24e;
+    border-radius: 10px;
 }
 
-.button__burger.is-open {
-  & .button__burger--close {
-    display: block;
-  }
+// Кнока к хедеру
+.botton--header {
+    line-height: 17px;
+}
 
-  & .button__burger--open {
-    display: none;
-  }
+.botton--transparent {
+    border-color: #f8d24e;
+    background-color: transparent;
+    color: $text-color-dark;
+    background: $accent-color;
+    border-radius: 10px;
+
+    transition: color $main-animation, border $main-animation;
+
+    &:focus {
+        color: $text-color-light;
+    }
 }
 
 /* КНОПКА БЕЗ РАМКИ */
-
 .button--no-border {
-  border: none;
-  padding: 7px 12px;
-  font-size: 8px;
-  line-height: 1.25;
-  background-color: transparent;
-  text-decoration: underline;
-  color: $accent-color;
-
-  &:hover {
-    color: $hover-color;
     border: none;
-  }
+    padding: 7px 12px;
+    font-size: 8px;
+    line-height: 1.25;
+    background-color: transparent;
+    text-decoration: underline;
+    color: $accent-color;
 
-  &:focus {
-    border: none;
-  }
+    &:hover {
+        color: $hover-color;
+    }
 }
 
 // Кнока к хедеру
 .button--header {
-  line-height: 17px;
+    line-height: 17px;
 }
 
+// Кнопка прозрачный фон
 .button--transparent {
-  border-color: $accent-color;
-  background-color: transparent;
-  padding: 7px 12px;
-  font-size: 8px;
-  line-height: 1.25;
-  border: 2px solid $accent-color;
+    border-color: $accent-color;
+    background-color: transparent;
+    padding: 7px 12px;
+    font-size: 8px;
+    line-height: 1.25;
+    border: 2px solid $accent-color;
+    &:hover {
+        border: 2px solid $hover-color;
+    }
+
+    &:focus {
+        border: 2px solid $hover-color;
+    }
+}
+
+// БУРГЕР
+.button__burger {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-left: auto;
+    outline: none;
+    cursor: url('../images/hero-header/Vector.png'), auto;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+
+    .button__burger--close {
+        display: none;
+    }
+}
+
+.button__burger.is-open {
+    & .button__burger--close {
+        display: block;
+    }
+
+    & .button__burger--open {
+        display: none;
+    }
 }
