@@ -1,0 +1,47 @@
+.about__section {
+    background-color: $main-background-color;
+
+}
+
+.about__container {
+    padding-top: 60px;
+    padding-bottom: 21px;
+}
+
+.about__image {
+    height: 303px;
+    margin-bottom: 40px;
+    background-image: url(../images/about/about_sm.png);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: contain;
+}
+
+.about__info {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+
+    width: 220px;
+    font-size: 12px;
+    line-height: 1.76;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #fcfcfc;
+}
+
+.about__item {
+    &:first-child {
+        margin-bottom: 4px;
+    }
+}
+
+.about__icon {
+    position: absolute;
+    top: 15px;
+    left: 122px;
+    margin-right: 5px;
+}
