@@ -1,0 +1,15 @@
+.gallery__section {
+    height: 100px;
+    min-width: 320px;
+    max-width: 1600px;
+    background-image: linear-gradient(
+        to bottom,
+        $main-background-color 16%,
+        $secondari-background-color 16%);       
+}
+
+.gallery__image {
+    display: block;
+    margin: 0 auto;
+}
+
