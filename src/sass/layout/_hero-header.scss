@@ -6,7 +6,9 @@ button {
 
 //  ХЕДЕР 
 
-
+.head {
+    background-color: $main-background-color;
+}
 
 .nav {
     display: flex;
@@ -118,7 +120,9 @@ button {
 
 // HERO
 
-
+.main {
+    background-color: $main-background-color;
+}
 
 .hero {
     padding-top: 58px;
