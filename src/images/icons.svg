@@ -1,3 +1,26 @@
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-open-mobile-menu" viewBox="0 0 32 32">
+            <path stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round"
+                stroke-miterlimit="4" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"></path>
+        </symbol>
+        <symbol id="icon-close-mobile-menu" viewBox="0 0 32 32">
+            <path style="fill: var(--color2, #fcfcfc)"
+                d="M23.884 6.706l-7.884 7.884-7.884-7.884c-0.177-0.162-0.414-0.262-0.674-0.262-0.551 0-0.998 0.447-0.998 0.998 0 0.26 0.099 0.497 0.262 0.674l-0.001-0.001 7.88 7.884-7.882 7.882c-0.181 0.181-0.293 0.43-0.293 0.706 0 0.551 0.447 0.998 0.998 0.998 0.275 0 0.524-0.111 0.705-0.292v0l7.886-7.882 7.884 7.884c0.177 0.162 0.414 0.262 0.674 0.262 0.551 0 0.998-0.447 0.998-0.998 0-0.26-0.099-0.497-0.262-0.674l0.001 0.001-7.884-7.884 7.884-7.886c0.181-0.181 0.293-0.43 0.293-0.706 0-0.551-0.447-0.998-0.998-0.998-0.275 0-0.524 0.111-0.705 0.292v0 0.002z">
+            </path>
+        </symbol>
+        <symbol id="icon-mouse" viewBox="0 0 19 24" fill="none">
+            <path
+                d="M6.04696 2.01171L16.9811 12.2169C18.8522 13.9633 17.8177 17.1 15.2748 17.3907L11.1573 17.8612C10.124 17.9793 9.15329 18.4167 8.38025 19.1124L6.0069 21.2484C4.07633 22.9859 1 21.6159 1 19.0186V4.20487C1 1.58174 4.12929 0.221893 6.04696 2.01171Z"
+                stroke="#131313" stroke-width="2" />
+        </symbol>
+        <symbol id="about__icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M4 2L8.94845 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+    </defs>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-open-mobile-menu" viewBox="0 0 32 32">
@@ -18,4 +41,5 @@
 <symbol id="icon-arrow-foc" viewBox="0 0 52 24" fill="none">
 <path d="M51.0607 13.0607C51.6464 12.4749 51.6464 11.5251 51.0607 10.9393L41.5147 1.3934C40.9289 0.807611 39.9792 0.807611 39.3934 1.3934C38.8076 1.97919 38.8076 2.92893 39.3934 3.51472L47.8787 12L39.3934 20.4853C38.8076 21.0711 38.8076 22.0208 39.3934 22.6066C39.9792 23.1924 40.9289 23.1924 41.5147 22.6066L51.0607 13.0607ZM0 13.5H50V10.5H0V13.5Z" fill="#131313"/>
 </symbol>
-</defs>
+</defs></svg>
+

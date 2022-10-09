@@ -17,12 +17,12 @@
         letter-spacing: 0.06em;
     }
 }
-.title--black {
-    color: $text-color-dark;
-}
 
-.title__label {
-    margin-bottom: 12px;
+.title--accent {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
 
     font-family: $font-family-main;
     color: $text-color-light;
@@ -42,7 +42,39 @@
     }
 }
 
-.title__label--black {
-    color: $text-color-dark;
-    font-weight: 800;
+.title__about--label {
+  margin-bottom: 12px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.title__about--topic {
+  width: 200px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+}
+
+.title--footer {
+  font-weight: 400;
+  text-align: left;
 }
