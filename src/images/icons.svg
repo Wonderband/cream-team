@@ -1,3 +1,26 @@
+
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <symbol id="icon-open-mobile-menu" viewBox="0 0 32 32">
+            <path stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round"
+                stroke-miterlimit="4" stroke-width="2" d="M6 10h20M6 16h20M6 22h20"></path>
+        </symbol>
+        <symbol id="icon-close-mobile-menu" viewBox="0 0 32 32">
+            <path style="fill: var(--color2, #fcfcfc)"
+                d="M23.884 6.706l-7.884 7.884-7.884-7.884c-0.177-0.162-0.414-0.262-0.674-0.262-0.551 0-0.998 0.447-0.998 0.998 0 0.26 0.099 0.497 0.262 0.674l-0.001-0.001 7.88 7.884-7.882 7.882c-0.181 0.181-0.293 0.43-0.293 0.706 0 0.551 0.447 0.998 0.998 0.998 0.275 0 0.524-0.111 0.705-0.292v0l7.886-7.882 7.884 7.884c0.177 0.162 0.414 0.262 0.674 0.262 0.551 0 0.998-0.447 0.998-0.998 0-0.26-0.099-0.497-0.262-0.674l0.001 0.001-7.884-7.884 7.884-7.886c0.181-0.181 0.293-0.43 0.293-0.706 0-0.551-0.447-0.998-0.998-0.998-0.275 0-0.524 0.111-0.705 0.292v0 0.002z">
+            </path>
+        </symbol>
+        <symbol id="icon-mouse" viewBox="0 0 19 24" fill="none">
+            <path
+                d="M6.04696 2.01171L16.9811 12.2169C18.8522 13.9633 17.8177 17.1 15.2748 17.3907L11.1573 17.8612C10.124 17.9793 9.15329 18.4167 8.38025 19.1124L6.0069 21.2484C4.07633 22.9859 1 21.6159 1 19.0186V4.20487C1 1.58174 4.12929 0.221893 6.04696 2.01171Z"
+                stroke="#131313" stroke-width="2" />
+        </symbol>
+        <symbol id="about__icon" width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M4 2L8.94845 6L4 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </symbol>
+    </defs><svg id="buy-icon" width="12" height="12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m4 2 4.95 4L4 10" stroke="#131313" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg"><defs><symbol id="icon-hero__button-foc" viewBox="0 0 69 32"><path d="M68.08 17.413c.361-.362.585-.861.585-1.413s-.224-1.052-.585-1.413L55.353 1.858a2.001 2.001 0 0 0-2.83 2.83l11.316 11.313-11.315 11.313a2.001 2.001 0 0 0 2.83 2.83l12.728-12.728zM0 18h66.667v-4H0v4z"/></symbol><symbol id="icon-hero__button-hov" viewBox="0 0 102 32"><path d="M101.414 17.414c.362-.362.586-.862.586-1.414s-.224-1.052-.586-1.414L88.686 1.858a2 2 0 1 0-2.829 2.827l.001.001L97.172 16 85.858 27.314a2 2 0 0 0 2.829 2.827l-.001.001 12.728-12.728zM0 18h100v-4H0v4z"/></symbol><symbol id="icon-hero__button-simple" viewBox="0 0 82 32"><path d="M81.414 17.414c.362-.362.586-.862.586-1.414s-.224-1.052-.586-1.414L68.686 1.858a2 2 0 1 0-2.829 2.827l.001.001L77.172 16 65.858 27.314a2 2 0 0 0 2.829 2.827l-.001.001 12.728-12.728zM0 18h80v-4H0v4z"/></symbol></defs></svg>
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-open-mobile-menu" viewBox="0 0 32 32">
