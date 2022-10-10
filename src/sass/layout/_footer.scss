@@ -27,6 +27,7 @@
         max-width: 1200px;
         padding-left: 16px;
         padding-right: 16px;
+        border-bottom: none;
     }
 }
 .slogan-box {
@@ -152,7 +153,20 @@
     margin-right: auto;
     text-align: center;
 
+    &::before {
+        @media screen and(min-width: 1200px) {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            width: calc(100vw - 4%);
+            border-bottom: 1px solid #e1e1e1;
+            top: -12px;
+        }
+    }
     @media screen and(min-width: 768px) {
         max-width: 100%;
+    }
+    @media screen and(min-width: 1200px) {
+        position: relative;
     }
 }
