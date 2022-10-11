@@ -149,6 +149,16 @@ button {
     }
 }
 
+ /*@keyframes isHidden {
+     0% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }*/
+
 .nav__button-buy {
     display: flex;
     align-items: center;
@@ -164,6 +174,12 @@ button {
     color: $text-color-dark;
     font-weight: 600;
     line-height: 1.21;
+
+    /*&:hover {
+        animation-name: isHidden;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }*/
 
     @media screen and (max-width: 1199px) {
         margin-top: 111px;
@@ -414,7 +430,15 @@ button {
     position: absolute;
     bottom: 0%;
     left: 0%;
+
 }
+
+
+
+
+
+
+
 
 .hero__image-ice {
     position: absolute;
