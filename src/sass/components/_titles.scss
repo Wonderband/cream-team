@@ -1,47 +1,3 @@
-.title {
-    font-family: $font-family-secondary;
-    color: $text-color-light;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: calc(38 / 30);
-    text-align: center;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {
-        font-size: 34px;
-        line-height: calc(43 / 34);
-    }
-    @media screen and (min-width: 1200px) {
-        font-size: 36px;
-        line-height: calc(45 / 36);
-        letter-spacing: 0.06em;
-    }
-}
-
-.title--accent {
-  font-family: 'Seymour One';
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 45px;
-
-    font-family: $font-family-main;
-    color: $text-color-light;
-    font-size: 18px;
-    line-height: calc(22 / 18);
-    text-align: center;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 768px) {
-        font-size: 22px;
-        line-height: calc(27 / 22);
-    }
-    @media screen and (min-width: 1200px) {
-        font-weight: 800;
-        font-size: 30px;
-        line-height: calc(37 / 30);
-    }
-}
-
 .title__about--label {
   margin-bottom: 12px;
 
@@ -57,7 +13,7 @@
 }
 
 .title__about--topic {
-  width: 200px;
+  
   margin-bottom: 32px;
   margin-left: auto;
   margin-right: auto;
@@ -72,9 +28,60 @@
   text-transform: uppercase;
 
   color: #fcfcfc;
+
+  @media screen and (max-width: 320px) {
+    width: 200px;
+  }
 }
 
-.title--footer {
+.title {
+  font-family: $font-family-secondary;
+  color: $text-color-light;
   font-weight: 400;
-  text-align: left;
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: calc(43 / 34);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(45 / 36);
+    letter-spacing: 0.06em;
+  }
+}
+
+.title--black {
+  color: $text-color-dark;
+}
+
+.title__label {
+  margin-bottom: 12px;
+
+  font-family: $font-family-main;
+  color: $text-color-light;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  text-align: center;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+    line-height: calc(27 / 22);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: calc(37 / 30);
+  }
+}
+
+.title__label--black {
+  color: $text-color-dark;
+  font-weight: 800;
 }
