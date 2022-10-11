@@ -6,25 +6,20 @@
     margin-left: auto;
     margin-right: auto;
 
-    background-color: $secondari-background-color;
-    background-image: url('../images/background/background1_sm.png'),
-        url('../images/background/background2_sm.png'),
-        url('../images/background/background3_sm.png');
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: top, center, bottom;
-    background-size: contain, contain, contain;
+    background-color: $secondary-background-color;
+    background-image: url('../images/background/background1_sm.png');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/background/background1_sm@2x.png'),
-            url('../images/background/background2_sm@2x.png'),
-            url('../images/background/background3_sm@2x.png');
+        background-image: url('../images/background/background1_sm@2x.png');
     }
 
     @media screen and (min-width: 768px) {
         max-width: 1200px;
         padding-top: 61px;
         padding-bottom: 82px;
-        background-size: cover;
         background-image: url('../images/background/background1_md.png');
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
             background-image: url('../images/background/background1_md@2x.png');
@@ -49,7 +44,7 @@
     margin-top: 148px;
     margin-left: auto;
     margin-right: auto;
-    row-gap: 164px;
+    gap: 164px;
 
     @media screen and (min-width: 768px) {
         margin-top: 200px;
@@ -61,6 +56,7 @@
     }
 }
 .products__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,8 +65,29 @@
 
     padding-bottom: 20px;
 
-    background-color: #fff;
+    background-color: $products__list-bg-color-1;
     border-radius: 24px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+        background: rgba(156, 190, 143, 0.7);
+        box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
+        background-image: url(../images/products/product_1_sm.png);
+        background-position: 0 -11px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../images/products/product_1_sm@2x.png');
+        }
+    }
 
     @media screen and (max-width: 767px) {
         width: 100%;
