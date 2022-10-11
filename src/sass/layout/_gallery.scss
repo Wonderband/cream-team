@@ -1,17 +1,15 @@
-.gallery__section {
-    min-width: 320px;
-    max-width: 1600px;
+.gallery__section {     
     background-image: linear-gradient(
         to bottom,
         $main-background-color 16%,
-        $secondary-background-color 16%
+        transparent 16%
     );
 
     @media screen and(min-width: 768px) {
         background-image: linear-gradient(
             to bottom,
             $main-background-color 50%,
-            $secondary-background-color 50%
+            transparent 50%
         );
     }
 
@@ -19,13 +17,21 @@
         background-image: linear-gradient(
             to bottom,
             $main-background-color 22%,
-            $secondary-background-color 22%
+            transparent 22%
         );
     }
 }
 
 .gallery__container {
-    // outline: 1px solid red;
+    padding-bottom: 80px;
+
+    @include media-screen(768px) {
+       padding-bottom: 60px;
+    }
+
+    @include media-screen(1200px) {
+        padding-bottom: 128px;
+     }
 }
 
 .gallery__image {
