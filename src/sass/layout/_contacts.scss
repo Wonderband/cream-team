@@ -1,0 +1,112 @@
+.contacts__section {
+    background-color: $main-background-color;
+}
+
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 32px;
+}
+
+.contacts__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:16px;
+}
+
+.contacts__card {
+    
+    width: 100%;
+    background: #FCFCFC;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+    @include text-design(500, 12px, calc(22/12), 0.04em);  
+}
+
+.contacts__subtitle {   
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;   
+    min-width: 80px;
+    height: 16px;
+    background-color: $secondary-background-color;
+    text-transform: uppercase;
+    // text-align: center;   
+    border-radius: 4px; 
+    margin-bottom: 20px; 
+}
+
+.contacts__text--city {
+    margin-bottom: 8px;
+}
+
+.contacts__text--address {
+    color: $products__list-bg-color-3;
+}
+
+.contacts__text-block:not(:last-child)::after {
+    content: "";
+    display: block;
+    margin: auto;
+    width: 216px;
+    height:0px;
+    background-color: $contacts__divider-color;
+    border: 1px solid $contacts__divider-color;
+    margin: 24px 0 24px;
+}
+
+.contacts__text--grey {
+    color:$text-color-grey;
+}
+
+.contacts__text--grey:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.contacts__text--contact {
+    line-height: 18px;
+}
+
+.contacts__button {   
+    display: flex;   
+    justify-content: center; 
+    gap: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 196px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    //@include text-design(600, 14px, calc(18/14), 0.04em);    
+    border: none;
+    outline: none;
+    transition: background-color $main-animation, color $main-animation;
+
+    &:hover {
+        border: none;
+        background-color: $hover-color;
+    }
+
+    &:focus {
+        border: none;
+        color: $text-color-light;
+        background-color: $hover-color;
+    }   
+}
+
+.contacts__link {
+    display: block;
+    text-decoration: none;
+    color: $text-color-dark;
+}
+
+
+
+
+
+
+ 

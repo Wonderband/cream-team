@@ -1,12 +1,11 @@
 .advantages__section {
     min-width: 320px;
-    max-width: 1600px;
+    // max-width: 1600px;
     background-color: $main-background-color;
 }
 
 .advantages__container {
-    padding-bottom: 36px;
-    outline: 1px solid red;
+    padding-bottom: 36px;    
 
     @media screen and(min-width: 768px) {
         padding-bottom: 40px;        
