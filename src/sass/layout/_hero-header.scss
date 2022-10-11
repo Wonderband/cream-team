@@ -69,6 +69,7 @@ button {
     }
     
     @media screen and (min-width: 1200px) {
+        align-items: center;
         display: flex;
         margin-top: auto;
         margin-left: 270px;
@@ -80,27 +81,22 @@ button {
 }
 
 .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    align-items: center;
+        
     @media screen and (min-width: 1200px) {
-        display: flex;
+        flex-direction: row;
         gap: 27px;
-        align-items: center;
-    }
-}
-
-.nav__item {
-    @media screen and (max-width: 1199px) {
-        margin-top: 32px;
-        text-align: center;
-
-        &:first-child {
-            margin-top: 0;
-        }
     }
 }
 
 .nav__link {
     // cursor: url('../images/hero-header/vector.png'), auto;
     color: $text-color-light;
+    display: flex;
     text-decoration: none;
     font-weight: 700;
     font-size: 16px;
@@ -189,7 +185,7 @@ button {
     }
 
     @media screen and (min-width: 1200px) {
-        margin-left: 210px;
+        margin-left: 213px;
     }
 }
 
