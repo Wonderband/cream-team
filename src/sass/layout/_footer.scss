@@ -1,24 +1,20 @@
 .section-footer {
+    padding-bottom: 62px;
     min-width: 320px;
     max-width: 1600px;
     background-color: $main-background-color;
-}
-.container-footer {
-    position: relative;
-    padding: 0px 20px 62px 20px;
-    min-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
 
     @media screen and(min-width: 768px) {
-        max-width: 768px;
-        display: flex;
-        flex-direction: column;
-        padding: 0 33px 13px 33px;
+        padding-bottom: 13px;
     }
     @media screen and(min-width: 1200px) {
-        max-width: 1200px;
-        padding: 0 16px 11px 16px;
+        padding-bottom: 11px;
+    }
+}
+.container-footer {
+    @media screen and(min-width: 768px) {
+        display: flex;
+        flex-direction: column;
     }
 }
 .slogan-call-box {
@@ -107,6 +103,7 @@
     &:hover,
     &:focus {
         color: #ffffff;
+        outline: none;
     }
 }
 .networks__icon {
@@ -150,9 +147,10 @@
     text-decoration: none;
 }
 .underfooter {
+    position: relative;
     display: flex;
     justify-content: center;
-    max-width: 320px;
+    max-width: 280px;
     margin-top: 56px;
     font-weight: 700;
     font-size: 14px;
@@ -162,16 +160,16 @@
     margin-right: auto;
     text-align: center;
 
-    &::before {
+    &::after {
         content: '';
         display: inline-block;
         position: absolute;
         width: 100vw;
         border-bottom: 1px solid #e1e1e1;
-        bottom: 120px;
+        bottom: 58px;
 
         @media screen and(min-width: 768px) {
-            bottom: 53px;
+            bottom: 40px;
         }
 
         @media screen and(min-width: 1200px) {
@@ -179,7 +177,7 @@
             display: inline-block;
             width: calc(100vw - 4%);
             border-bottom: 1px solid #e1e1e1;
-            bottom: 45px;
+            bottom: 36px;
         }
     }
     @media screen and(min-width: 768px) {
