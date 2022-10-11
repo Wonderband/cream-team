@@ -1,5 +1,7 @@
 .section-footer {
-    // background-color: $advantages__bg-color;
+    min-width: 320px;
+    max-width: 1600px;
+    background-color: $main-background-color;
 }
 .container-footer {
     position: relative;
@@ -22,16 +24,17 @@
 .slogan-call-box {
     display: flex;
     flex-direction: column;
+    color: $text-color-light;
 
     @media screen and(min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
 }
 .slogan-box {
     font-weight: 700;
     text-transform: uppercase;
-    // color: $modal-background-color;
 }
 .slogan-text--small {
     font-size: 18px;
@@ -61,21 +64,22 @@
         font-size: 48px;
         margin-top: 9px;
         max-width: 340px;
-        margin-bottom: 32px;
     }
 
     @media screen and(min-width: 1200px) {
-        font-size: 58px;
         margin-top: 14px;
-        margin-bottom: 54px;
         max-width: 497px;
+
+        font-size: 58px;
     }
 }
 .networks {
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    margin-top: 42px;
+
+    @media screen and(max-width: 767px) {
+        margin-top: 42px;
+    }
 }
 .networks-list {
     display: flex;
@@ -98,45 +102,57 @@
     display: block;
     width: 100%;
     height: 100%;
+    color: $main-background-color;
+
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
 }
 .networks__icon {
     width: 100%;
     height: 100%;
+
+    fill: currentColor;
 }
 .call {
     display: flex;
     justify-content: end;
     text-align: end;
+
     margin-right: 0;
-    margin-top: 38px;
+    margin-top: 39px;
+
     font-size: 12px;
     line-height: 1.9;
     letter-spacing: 0.01;
 
     @media screen and(min-width: 768px) {
-        font-size: 14px;
         margin-top: 32px;
-        margin-bottom: 56px;
+
+        font-size: 14px;
     }
 
     @media screen and(min-width: 1200px) {
-        margin-bottom: 60px;
+        margin-top: 40px;
+
         font-size: 16px;
     }
 }
 .call__text {
     color: $text-color-dark;
-    font-weight: 500;
+    font-weight: 700;
 }
 .call__link {
+    font-family: $font-family-additional;
     color: $text-color-light;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
 }
 .underfooter {
     display: flex;
     justify-content: center;
-    max-width: 170px;
+    max-width: 320px;
     margin-top: 56px;
     font-weight: 700;
     font-size: 14px;
@@ -171,6 +187,7 @@
         margin-top: 46px;
     }
     @media screen and(min-width: 1200px) {
+        margin-top: 66px;
         font-size: 12px;
         line-height: 1.9;
     }

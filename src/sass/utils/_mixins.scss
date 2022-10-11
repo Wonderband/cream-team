@@ -4,3 +4,7 @@
     line-height: $lh;
     letter-spacing: $ls;
 }
+
+@mixin media-screen($mw) {
+    @media screen and(min-width: $mw) { @content; }
+}
