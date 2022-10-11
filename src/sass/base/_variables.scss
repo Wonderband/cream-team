@@ -2,19 +2,35 @@ $text-color-dark: #131313;
 
 $text-color-light: #fcfcfc;
 
-$text-color-grey: #ABABAB;
+$text-color-grey: #ababab;
 
-$main-background-color: #84a278;
+$main-background-color: #84a178;
 $secondary-background-color: #f5f5f5;
 $accent-color: #f8d24e;
 $hover-color: #0a8817;
 
-$products__list-bg-color-1: #aec6a5;
-$products__list-bg-color-2: #efd478;
 $products__list-bg-color-3: #d6936d;
 
-$contacts__divider-color: #E1E1E1;
+$contacts__divider-color: #e1e1e1;
 
 $font-family-main: montserrat, sans-serif;
 $font-family-secondary: seymour one, sans-serif;
 $font-family-additional: dm sans, sans-serif;
+
+$before-bg-colors: (
+    'product_1': rgb(175, 199, 167),
+    'product_2': rgb(240, 214, 121),
+    'product_3': rgb(216, 148, 111),
+);
+
+$shadow-colors: (
+    'product_1': rgba(10, 136, 23, 0.25),
+    'product_2': rgba(153, 114, 23, 0.25),
+    'product_3': rgba(0, 0, 0, 0.25),
+);
+
+$bg-color: (
+    'product_1': #aec6a5,
+    'product_2': #efd478,
+    'product_3': #d6936d,
+);
