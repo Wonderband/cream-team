@@ -12,7 +12,7 @@
     font-family: $font-family-main;
     font-weight: 600;
     line-height: calc(18 / 14);
-    cursor: url('../images/hero-header/Vector.png'), auto;
+    // cursor: url('../images/hero-header/Vector.png'), auto;
 
     color: #131313;
     background: #f8d24e;
@@ -63,11 +63,10 @@
         background-color: $hover-color;
     }
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         margin-left: 0;
     }
 }
-
 
 /* КНОПКА БЕЗ РАМКИ */
 .button--no-border {
@@ -114,7 +113,7 @@
     padding: 0;
     margin-left: auto;
     outline: none;
-    cursor: url('../images/hero-header/Vector.png'), auto;
+    // cursor: url('../images/hero-header/Vector.png'), auto;
 
     @media screen and (min-width: 1200px) {
         display: none;
