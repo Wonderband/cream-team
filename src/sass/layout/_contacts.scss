@@ -1,9 +1,6 @@
 .contacts__section {
     background-color: $main-background-color;
 }
-.contacts__container {
-    padding: 0 20px;
-}
 
 .contacts__list {
     display: flex;
@@ -22,7 +19,8 @@
 }
 
 .contacts__card {
-    display: block;
+    
+    width: 100%;
     background: #FCFCFC;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
@@ -30,12 +28,15 @@
     @include text-design(500, 12px, calc(22/12), 0.04em);  
 }
 
-.contacts__subtitle {     
-    width: 80px;
+.contacts__subtitle {   
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;   
+    min-width: 80px;
     height: 16px;
     background-color: $secondary-background-color;
     text-transform: uppercase;
-    text-align: center;   
+    // text-align: center;   
     border-radius: 4px; 
     margin-bottom: 20px; 
 }
@@ -54,6 +55,7 @@
     margin: auto;
     width: 216px;
     height:0px;
+    background-color: $contacts__divider-color;
     border: 1px solid $contacts__divider-color;
     margin: 24px 0 24px;
 }
@@ -66,7 +68,7 @@
     margin-bottom: 8px;
 }
 
-.contacts__text--grey:not(:last-child) {
+.contacts__text--contact {
     line-height: 18px;
 }
 
@@ -82,6 +84,7 @@
     //@include text-design(600, 14px, calc(18/14), 0.04em);    
     border: none;
     outline: none;
+    transition: background-color $main-animation, color $main-animation;
 
     &:hover {
         border: none;
