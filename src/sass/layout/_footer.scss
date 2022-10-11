@@ -3,10 +3,7 @@
 }
 .container-footer {
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 62px;
-    max-width: 480px;
+    padding: 0px 20px 62px 20px;
     min-width: 320px;
     margin-left: auto;
     margin-right: auto;
@@ -15,16 +12,11 @@
         max-width: 768px;
         display: flex;
         flex-direction: column;
-
-        padding-left: 33px;
-        padding-right: 33px;
-        padding-bottom: 13px;
+        padding: 0 33px 13px 33px;
     }
     @media screen and(min-width: 1200px) {
         max-width: 1200px;
-        padding-left: 16px;
-        padding-right: 16px;
-        padding-bottom: 11px;
+        padding: 0 16px 11px 16px;
     }
 }
 .slogan-call-box {
@@ -35,11 +27,8 @@
         flex-direction: row;
         justify-content: space-between;
     }
-    @media screen and(min-width: 1200px) {
-    }
 }
 .slogan-box {
-    font-style: normal;
     font-weight: 700;
     text-transform: uppercase;
     color: $modal-background-color;
@@ -121,7 +110,8 @@
     margin-right: 0;
     margin-top: 38px;
     font-size: 12px;
-    line-height: 186%;
+    line-height: 1.9;
+    letter-spacing: 0.01;
 
     @media screen and(min-width: 768px) {
         font-size: 14px;
@@ -136,11 +126,11 @@
 }
 .call__text {
     color: $text-color-dark;
-    font-weight: 700;
+    font-weight: 500;
 }
 .call__link {
     color: $text-color-light;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
 }
 .underfooter {
