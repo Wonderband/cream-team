@@ -37,26 +37,24 @@
                 </svg>
             </button>
 
-            <div class="nav__menu" id="mobile__menu-body" data-mobile__menu>
-                <nav class="nav__body">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">How it’s made?</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#products" class="nav__link">Our products</a>
-                        </li>
-                        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
-                    </ul>
-                    <button type="button" class="nav__button-buy">
-                        Buy now
-                        <svg class="nav__icon-buy" width="12" height="12">
-                            <use href="./images/icons.svg#buy-icon"></use>
-                        </svg>
-                    </button>
-                </nav>
-            </div>
+            <nav class="nav__body" id="mobile__menu-body" data-mobile__menu>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">How it’s made?</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">Our products</a>
+                    </li>
+                    <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+                </ul>
+                <button type="button" class="nav__button-buy">
+                    Buy now
+                    <svg class="nav__icon-buy" width="12" height="12">
+                        <use href="./images/icons.svg#buy-icon"></use>
+                    </svg>
+                </button>
+            </nav>
         </div>
     </section>
 </header>
@@ -68,10 +66,10 @@
         </h1>
         <ul class="hero__list">
             <li class="hero__item">
-                <button type="button" class="hero__button-products" href="">Products</button>
+                <a class="hero__button-products" href="#products">Products</a>
             </li>
             <li class="hero__item">
-                <button type="button" class="hero__button-how" href="">How it’s made?</button>
+                <a class="hero__button-how" href="#about">How it’s made?</a>
             </li>
         </ul>
         <div class="hero__arrow-body">
