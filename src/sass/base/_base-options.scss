@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     // cursor: url('../images/hero-header/Vector.png'), auto;
 }
 
@@ -6,20 +7,13 @@ body {
     font-family: $font-family-main;
     color: $text-color-dark;
     letter-spacing: 0.04em;
-
-
-
+    overflow-x: hidden;
     background-image: url('../images/background/background_hr.png');
     background-size: contain;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
         background-image: url('../images/background/background_hr@2x.png');
-
     }
-}
-
-:root {
-    scroll-behavior: smooth;
 }
 
 h1,
@@ -27,14 +21,9 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    margin: 0;
-    padding: 0;
-}
-
+h6,
 p {
     margin: 0;
-    padding: 0;
 }
 
 ul {
