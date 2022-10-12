@@ -171,6 +171,26 @@
     }
 }
 
+.contacts__button--transparent {
+    justify-content: center;
+    gap: 6px;
+    width: 196px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border: 2px solid $accent-color;    
+    background: transparent;
+    transition: color $main-animation, border $main-animation;
+
+    &:hover {        
+        border-color: $hover-color;
+    }
+
+    &:focus {
+        border-color: $hover-color;
+        color: $text-color-light;        
+    }   
+}
+
 .contacts__link {
     display: block;
     text-decoration: none;
