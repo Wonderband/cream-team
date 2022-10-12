@@ -4,8 +4,11 @@ button {
 
 //  ХЕДЕР
 
-.head {
+.header {
     background-color: $main-background-color;
+    position: sticky;
+    z-index: 9;
+    top: 0;
 }
 
 .nav {
