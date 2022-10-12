@@ -85,14 +85,25 @@
             </button>
         </div>
     </div>
-    <div class="backdrop is-hidden" data-modal="locations" id="locations">
+    <div class="backdrop is-hidden" id="locations">
         <div class="modal-win">
-            <button type="button" class="modal__close-button" data-btn="close" data-action="close">
+            <button type="button" class="modal__close-button" data-btn="close">
                 <svg class="modal__close-icon" width="20" height="20" data-btn="close">
-                    <use href="./images/icons.svg#icon-close-modal"></use>
+                    <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
                 </svg>
             </button>
-            ТЕСТ МОДАЛКИ
+            LOCATIONS
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" id="franchise">
+        <div class="modal-win">
+            <button type="button" class="modal__close-button" data-btn="close">
+                <svg class="modal__close-icon" width="20" height="20" data-btn="close">
+                    <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
+                </svg>
+            </button>
+            FRANCHISE
         </div>
     </div>
 </section>
