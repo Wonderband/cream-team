@@ -1,0 +1,77 @@
+<header class="header">
+    <section class="section head">
+        <div class="container nav">
+            <img
+                class="company__logo"
+                srcset="
+                    ./images/hero-header/logo.png             48w,
+                    ./images/hero-header/logo@2x.png          96w,
+                    ./images/hero-header/logo-desktop.png     60w,
+                    ./images/hero-header/logo-desktop@2x.png 120w
+                "
+                sizes="(min-width: 1200px) 60px, (min-width: 320px) 48px, 100vw"
+                src="./images/hero-header/logo.png"
+                alt="ice cream logo"
+                loading="lazy"
+            />
+            <button
+                type="button"
+                class="button__menu is-open"
+                data-mobile__menu-open
+                aria-controls="mobile__menu-body"
+            >
+                <svg
+                    class="button__menu-icons"
+                    width="32"
+                    height="32"
+                    aria-label="Вызов мобильного меню"
+                >
+                    <use
+                        class="button__menu-open"
+                        href="./images/icons.svg#icon-open-mobile-menu"
+                    ></use>
+                    <use
+                        class="button__menu-close"
+                        href="./images/icons.svg#icon-close-mobile-menu"
+                    ></use>
+                </svg>
+            </button>
+            <div class="nav__buy-body">
+                <button type="button" class="nav__buy-button">
+                    Buy now
+                    <svg class="nav__buy-icon" width="12" height="12">
+                        <use href="./images/icons.svg#about__icon"></use>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- <button class="hamburger hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> -->
+            <div class="nav__body" id="mobile__menu-body" data-mobile__menu>
+                <nav>
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">How it’s made?</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Our products</a>
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="nav__button-body">
+                    <button data-modal-open type="button" class="nav__button-buy">
+                        Buy now
+                        <svg class="nav__icon-buy" width="12" height="12">
+                            <use href="./images/icons.svg#about__icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>

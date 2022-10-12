@@ -13,6 +13,8 @@
 @import './components/titles';
 // @import './components/navigation';
 
+@import './layout/header';
+@import './layout/hero';
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/contacts';
@@ -20,8 +22,6 @@
 @import './layout/example';
 @import './layout/footer';
 @import './layout/gallery';
-@import './layout/hero-header';
-
 
 @import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
 
