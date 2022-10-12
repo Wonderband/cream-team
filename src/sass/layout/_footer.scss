@@ -4,15 +4,15 @@
 
     background-color: $main-background-color;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         padding-bottom: 13px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         padding-bottom: 11px;
     }
 }
 .container-footer {
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
     }
@@ -22,7 +22,7 @@
     flex-direction: column;
     color: $text-color-light;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -37,13 +37,13 @@
     line-height: 22px;
     max-width: 320px;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 26px;
         line-height: 32px;
         max-width: 352px;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 30px;
         font-weight: 400;
         max-width: 504px;
@@ -56,13 +56,13 @@
     font-weight: 700;
     max-width: 200px;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         font-size: 48px;
         margin-top: 9px;
         max-width: 340px;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 14px;
         max-width: 497px;
 
@@ -73,7 +73,7 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and(max-width: 767px) {
+    @media screen and (max-width: 767px) {
         margin-top: 42px;
     }
 }
@@ -89,7 +89,7 @@
 .networks-list__item {
     width: 32px;
     height: 32px;
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         width: 34px;
         height: 34px;
     }
@@ -124,13 +124,13 @@
     line-height: 1.9;
     letter-spacing: 0.01;
 
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         margin-top: 32px;
 
         font-size: 14px;
     }
 
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 40px;
 
         font-size: 16px;
@@ -168,11 +168,11 @@
         border-bottom: 1px solid #e1e1e1;
         bottom: 58px;
 
-        @media screen and(min-width: 768px) {
+        @media screen and (min-width: 768px) {
             bottom: 40px;
         }
 
-        @media screen and(min-width: 1200px) {
+        @media screen and (min-width: 1200px) {
             content: '';
             display: inline-block;
             width: calc(100vw - 4%);
@@ -180,11 +180,11 @@
             bottom: 36px;
         }
     }
-    @media screen and(min-width: 768px) {
+    @media screen and (min-width: 768px) {
         max-width: 100%;
         margin-top: 46px;
     }
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         margin-top: 66px;
         font-size: 12px;
         line-height: 1.9;
