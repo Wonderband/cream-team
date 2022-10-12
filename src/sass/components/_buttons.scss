@@ -53,6 +53,8 @@
     outline: none;
     margin-top: 16px;
 
+    transition: color $main-animation, background $main-animation;
+
     &:hover {
         border: none;
         background-color: $hover-color;
