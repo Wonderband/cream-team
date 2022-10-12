@@ -1,17 +1,17 @@
-(() => {
-    const refs = {
-      openModalBtn: document.querySelector("[data-modal-test]"),
-      closeModalBtn: document.querySelector("[data-modal-best]"),
-      modal: document.querySelector("[data-modal-window]"),
-    };
+// (() => {
+//     const refs = {
+//       openModalBtn: document.querySelector("[data-modal-test]"),
+//       closeModalBtn: document.querySelector("[data-modal-best]"),
+//       modal: document.querySelector("[data-modal-window]"),
+//     };
   
-    refs.openModalBtn.addEventListener("click", toggleModal);
-    refs.closeModalBtn.addEventListener("click", toggleModal);
+//     refs.openModalBtn.addEventListener("click", toggleModal);
+//     refs.closeModalBtn.addEventListener("click", toggleModal);
   
-    function toggleModal() {
-      refs.modal.classList.toggle("is-hidden");
-    }
-  })();
+//     function toggleModal() {
+//       refs.modal.classList.toggle("is-hidden");
+//     }
+//   })();
 
   (() => {
     const refs = {
@@ -23,22 +23,26 @@
     };
   
     refs.body.addEventListener("click", (e)=> {
+      
       const currentBtn = e.target;
-      let closeBtn;
+      console.log(currentBtn);
+      // let closeBtn;      
       const elID = currentBtn.dataset.btn;
-      const currentModal =  document.getElementById(elID);
-  
-      toggleModal(currentModal)
-  
-      if(e.currentTarget.dataset.action === "close") {
-         closeBtn = e.currentTarget
+      console.log(elID);
+      if (elID === "close") {
+        console.log('inside!');
+        currentModal = document.getElementsByClassName("opened")[0];
+        console.log(currentModal);
+        toggleModal(currentModal);
       }
-    })
-  
-  
-    // refs.openModalBtn.addEventListener("click", toggleModal);
+      else if (elID) {
+          let currentModal =  document.getElementById(elID);
+          toggleModal(currentModal);            
+      }    
+    });    
   
     function toggleModal(currentModal) {
       currentModal.classList.toggle("is-hidden");
+      currentModal.classList.toggle("opened");
     }
   })();
