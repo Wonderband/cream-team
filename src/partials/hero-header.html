@@ -37,6 +37,12 @@
                 </svg>
             </button>
 
+            <!-- <button class="hamburger hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button> -->
+
             <nav class="nav__body" id="mobile__menu-body" data-mobile__menu>
                 <ul class="nav__list">
                     <li class="nav__item"><a href="" class="nav__link">Home</a></li>
@@ -48,12 +54,14 @@
                     </li>
                     <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
                 </ul>
-                <button type="button" class="nav__button-buy">
-                    Buy now
-                    <svg class="nav__icon-buy" width="12" height="12">
-                        <use href="./images/icons.svg#about__icon"></use>
-                    </svg>
-                </button>
+                <div class="nav__button-body">
+                    <button data-modal-open type="button" class="nav__button-buy">
+                        Buy now
+                        <svg class="nav__icon-buy" width="12" height="12">
+                            <use href="./images/icons.svg#about__icon"></use>
+                        </svg>
+                    </button>
+                </div>
             </nav>
         </div>
     </section>
@@ -144,7 +152,6 @@
                 />
             </li>
         </ul>
-
         <div class="hero__sales">
             <ul class="hero__list-sales">
                 <li class="hero__item-sales">
@@ -156,6 +163,65 @@
                     </p>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__close-button" data-modal-close>
+                <svg class="modal__close-icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-close-modal"></use>
+                </svg>
+            </button>
+            <form class="modal__form">
+                <strong class="modal__title">Buy now</strong>
+                <div class="modal__image-body">
+                    <button class="modal__image-button modal__image-button--green">
+                        ICE CREAM
+                    </button>
+                    <button class="modal__image-button modal__image-button--yellow">
+                        ICE COFFEE
+                    </button>
+                    <button class="modal__image-button modal__image-button--brown">
+                        MILKSHAKE
+                    </button>
+                </div>
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="name"></label>
+                    <input
+                        class="modal__form-input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                    />
+                </div>
+
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="tel"></label>
+                    <input
+                        class="modal__form-input"
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="Phone"
+                    />
+                </div>
+
+                <div class="modal__form-field modal__form-field--indent-size">
+                    <label class="modal__form-text" for="comment"></label>
+                    <textarea
+                        class="modal__form-textarea"
+                        name="comment"
+                        id="comment"
+                        rows="8"
+                        placeholder="Comment"
+                    ></textarea>
+                </div>
+                <div class="modal__submit-body">
+                    <button class="modal__submit-button" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
 </section>
