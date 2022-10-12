@@ -208,6 +208,7 @@ button {
     padding-top: 61px;
     padding-bottom: 239px;
     position: relative;
+    
 
     @media screen and (max-width: 767px) {
         max-width: 320px;
@@ -541,6 +542,16 @@ button {
     width: 568px;
 
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        width: auto;
+        padding: 28px 28px;
+    }
+
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+        
+    }
+
 }
 
 .modal__close-button { // НОРМА //
@@ -552,11 +563,18 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    
 
     &:focus {
-        fill: $accent-color;   
+        fill: $accent-color; 
     } 
+
+    @media screen and (max-width: 767px) {
+        top: 8px;
+        right: 8px
+    }
 }
+
 
 .modal__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -589,12 +607,28 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    row-gap: 16px;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+
+}
+.modal__form-field:nth-last-child(-n+2) {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 }
 
 .modal__form {
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .modal__form-input {
@@ -608,8 +642,23 @@ button {
     padding: 11px 0px 11px 16px;
     width: 368px;
 
+    @media screen and (max-width: 767px) {
+            width: 224px;
+            font-size: 12px;
+            line-height: 1.42;
+            padding: 8px 12px 7px 12px;
+            min-height: 32px;
+        }
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &::placeholder {
         color: $text-color-dark
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
     }
 }
 
@@ -628,6 +677,14 @@ button {
     padding: 11px 0px 11px 16px;
 
     width: 368px;
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            height: 65px;
+            font-size: 12px;
+            line-height: 140%;
+            padding: 8px 0px 38px 12px;
+        }
 
     resize: none;
 
@@ -649,7 +706,6 @@ button {
     border-radius: 10px;
     padding: 12px 34px;
     border: none;
-    margin-top: 32px;
     outline: transparent;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -663,11 +719,18 @@ button {
         color: $text-color-light;
     }
 
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.25;
+    }
+
 }
 
 .modal__submit-body {
     display: flex;
     justify-content: center;
+
+    
 }
 
 .modal__form-text {
@@ -697,8 +760,12 @@ button {
     gap: 32px;
     margin-top: 103px;
 
-
-
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 84px;
+        margin-top: 84px;
+        margin-bottom: 24px;
+    }
 }
 
 .modal__image-button {
@@ -718,6 +785,10 @@ button {
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0px;
+    }
 
 }
 
