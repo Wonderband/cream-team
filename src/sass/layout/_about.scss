@@ -1,14 +1,15 @@
 .about__section {
     background-color: $main-background-color;
-}
 
-.about__container {
-    width: 100%;
     padding-top: 60px;
-    padding-bottom: 21px;
+    padding-bottom: 42px;
 
-    @media screen and (min-width:768px) {
-        padding-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        padding-bottom: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 60px;
     }
 }
 
@@ -16,11 +17,11 @@
     display: flex;
     flex-direction: column;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         flex-direction: row;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
         align-items: center;
     }
 }
@@ -35,7 +36,7 @@
     background-position: 50% 0;
     background-size: contain;
 
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         height: 356px;
         width: 336px;
         background-image: url(../images/about/about_md.png);
@@ -44,7 +45,7 @@
         margin-right: 32px;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
         height: 529px;
         width: 500px;
         background-image: url(../images/about/about_lg.png);
@@ -53,15 +54,14 @@
         margin-right: 100px;
     }
 }
-
+// Список ul
 .about__info {
     display: flex;
     flex-direction: column;
+    gap: 4px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 20px;
 
-    width: 220px;
     font-size: 12px;
     line-height: 1.76;
     text-align: center;
@@ -69,34 +69,29 @@
 
     color: $text-color-light;
 
-
-    @media screen and (min-width:768px) {
+    @media screen and (min-width: 768px) {
         width: 334px;
-        text-align: start;
-        margin-bottom: 48px;
+        gap: 8px;
+        text-align: left;
     }
 
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 16px;
         width: 463px;
     }
 }
-
-.about__item {
-    &:not(:last-child) {
-        margin-bottom: 4px;
+// Лишка в спике
+.about__text {
+    @media screen and (max-width: 320px) {
+        width: 220px;
     }
-
-    &:last-child {
+    width: 100%;
+    &:last-of-type {
         display: none;
     }
 
-    @media screen and (min-width:768px) {
-        &:not(:last-child) {
-            margin-bottom: 8px;
-        }
-
-        &:last-child {
+    @media screen and (min-width: 768px) {
+        &:last-of-type {
             display: block;
         }
     }
