@@ -13,30 +13,17 @@
 //     }
 //   })();
 
-  (() => {
-    const refs = {
-      body: document.querySelector('.page'),
-      locationsModalBtn: document.querySelector("[data-modal-locations]"),
-      openModalBtn: document.querySelector("[data-modal-open]"),
-      closeModalBtns: document.querySelectorAll("[data-modal-close]"),
-      modal: document.querySelectorAll("[data-modal]"),
-    };
-  
-    refs.body.addEventListener("click", (e)=> {
+  (() => { 
+    document.addEventListener("click", (e)=> {      
+      let currentModal = null;
+      const clickOn = e.target.dataset.btn;
       
-      const currentBtn = e.target;
-      console.log(currentBtn);
-      // let closeBtn;      
-      const elID = currentBtn.dataset.btn;
-      console.log(elID);
-      if (elID === "close") {
-        console.log('inside!');
-        currentModal = document.getElementsByClassName("opened")[0];
-        console.log(currentModal);
+      if (clickOn === "close") {        
+        currentModal = document.getElementsByClassName("opened")[0];        
         toggleModal(currentModal);
       }
-      else if (elID) {
-          let currentModal =  document.getElementById(elID);
+      else if (clickOn) {
+          currentModal = document.getElementById(clickOn);
           toggleModal(currentModal);            
       }    
     });    
