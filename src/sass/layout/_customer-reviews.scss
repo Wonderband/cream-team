@@ -1,52 +1,18 @@
-.customers__section {
-    background-repeat: no-repeat;
-    background-position: left top;
-    background-size: contain;
-    background-color: $secondary-background-color;
-    background-image: url(../images/background/background1_sm.png);
-
-    @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(../images/background/background1_sm@2x.png);
-    }
-
-    @media screen and (min-width: 481px) {
-        background-image: url(../images/background/background1_md.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/background/background1_md@2x.png);
-        }
-    }
-
-    @media screen and (min-width: 769px) {
-        background-image: url(../images/background/background1_lg.png);
-
-        @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(../images/background/background1_lg@2x.png);
-        }
-    }
+.customers__title {
+    text-align: center;
+    color: $text-color-light;
+    display: none;
 }
 
 .customers__slider {
-    // padding-top: 80px;
-    padding-bottom: 394px;
+    padding-bottom: 48px;
 
     @media screen and (min-width:768px) {
-        // padding-top: 60px;
-        padding-bottom: 383px;
+        padding-bottom: 80px;
     }
 
     @media screen and (min-width:1200px) {
-        // padding-top: 128px;
-        padding-bottom: 207px;
+        padding-bottom: 111px;
     }
 }
 
