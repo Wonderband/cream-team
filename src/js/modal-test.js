@@ -5,15 +5,15 @@
       
       if (clickOn === "close") {        
         currentModal = document.getElementsByClassName("opened")[0];        
-        toggleModal(currentModal);
+        toggleModalAllWindows(currentModal);
       }
       else if (clickOn) {
           currentModal = document.getElementById(clickOn);
-          toggleModal(currentModal);            
+          toggleModalAllWindows(currentModal);            
       }    
     });    
   
-    function toggleModal(currentModal) {
+    function toggleModalAllWindows(currentModal) {
       currentModal.classList.toggle("is-hidden");
       currentModal.classList.toggle("opened");
     }
