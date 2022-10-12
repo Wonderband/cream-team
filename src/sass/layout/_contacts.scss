@@ -206,7 +206,7 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;
+    overflow-y: scroll;    
     /*?? прокрутка модалки ??*/
 
     opacity: 1;
@@ -231,29 +231,34 @@
 }
 
 .modal_locations, .modal_franchise {
+    box-sizing: border-box;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    padding: 28px;
+    padding: 26px;
 
     background-color: $text-color-light;
     border: 2px solid $accent-color;
     border-radius: 10px;
 
-    width: 280px;
+    min-width: 280px;    
+    width: 80%;
+    max-width: 439px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal_locations {
+    @include media-screen(480px) {
+        width: 440px;        
+    }
 
     @include media-screen(768px) {
         width: 568px;
-        padding: 32px 60px;
+        padding: 30px 58px;
     }
 }
 
-.locations__close-button { 
+
+.locations__close-button, .franchise__close-button { 
     background-color: transparent;
     border: none;
     position: absolute;
@@ -272,7 +277,6 @@
         top: 20px;
         right: 20px;
     }
-
 }
 
 .modal__close-icon {
@@ -289,14 +293,37 @@
     }
 }
 
-.locations__title {
+.locations__title, .franchise__title {
     font-family: $font-family-secondary;
     @include text-design(400, 16px, calc(24/16), 0.04em);
+    margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
 
     @include media-screen(768px) {
         @include text-design(400, 20px, calc(28/20), 0.04em);
+        width: 322px;
+    }
+}
+
+.locations__title {
+    @include media-screen(768px) {
+        margin-bottom: 32px;
+    }
+}
+
+.franchise__title {
+    @include media-screen(768px) {
+        margin-bottom: 24px;
+    }
+}
+
+.franchise__text {
+    @include text-design(400, 14px, calc(20/14), 0.04em);
+    margin-bottom: 24px;
+
+    @include media-screen(768px) {
+        margin-bottom: 32px;
     }
 }
 

@@ -94,20 +94,73 @@
             </button>
             <h3 class="locations__title">Our Locations</h3>
             <div class="locations__map"></div>
-            <button type="button" class="button locations__button">Open map</button>
-
-            
+            <button type="button" class="button locations__button">Open map</button>            
         </div>
     </div>
 
     <div class="backdrop is-hidden" id="franchise">
         <div class="modal_franchise">
             <button type="button" class="franchise__close-button" data-btn="close">
-                <svg class="modal__close-icon" width="20" height="20" data-btn="close">
+                <svg class="modal__close-icon" data-btn="close">
                     <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
                 </svg>
             </button>
-            FRANCHISE
+            <h3 class="franchise__title">Thank you for your interest in owning an Ice Cream shop</h3>
+            <p class="franchise__text">
+                Due to the overwhelming volume of franchise requests we are not accepting new 
+                franchisee applications at this time. Once the application process resumes, 
+                we will contact you for further information. Please fill out the contact information
+                 below and we will reach out for additional information. We appreciate your patience.
+            </p>
+            <form class="modal__form">               
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="name"></label>
+                    <input
+                        class="modal__form-input"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Name"
+                    />
+                </div>
+
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="tel"></label>
+                    <input
+                        class="modal__form-input"
+                        type="tel"
+                        name="tel"
+                        id="tel"
+                        placeholder="Phone"
+                    />
+                </div>
+
+                <div class="modal__form-field">
+                    <label class="modal__form-text" for="tel"></label>
+                    <input
+                        class="modal__form-input"
+                        type="email"
+                        name="tel"
+                        id="tel"
+                        placeholder="Email"
+                    />
+                </div>
+
+                <div class="modal__form-field modal__form-field--indent-size">
+                    <label class="modal__form-text" for="comment"></label>
+                    <textarea
+                        class="modal__form-textarea"
+                        name="comment"
+                        id="comment"
+                        rows="8"
+                        placeholder="Comment"
+                    ></textarea>
+                </div>
+                <div class="modal__submit-body">
+                    <button class="modal__submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+           
         </div>
     </div>
 </section>
