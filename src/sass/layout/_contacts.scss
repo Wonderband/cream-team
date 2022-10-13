@@ -242,14 +242,10 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
 
-    min-width: 280px;    
-    width: 80%;
-    max-width: 439px;
+    width: 280px;    
+   
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    @include media-screen(480px) {
-        width: 440px;        
-    }
+   
 
     @include media-screen(768px) {
         width: 568px;
