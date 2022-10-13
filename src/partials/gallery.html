@@ -1,7 +1,8 @@
-<section class="section gallery__section">  
-    <h2 class="visually-hidden">Gallery</h2>  
-    <div class="container gallery__container">        
-            <img class="gallery__image"
+<section class="section gallery__section">     
+    <div class="container gallery__container"> 
+        <h2 class="visually-hidden">Gallery</h2>  
+        <div class="gallery__img__container">      
+            <img class="gallery__image show"
                 srcset="./images/gallery/img1_m.jpg 279w, 
                 ./images/gallery/img1_m@2x.jpg 558w, 
                 ./images/gallery/img1_t704.jpg 704w,
@@ -12,6 +13,17 @@
                 (min-width: 480px) 440px, 100vw"
                 src="./images/gallery/img1_m.jpg"
                 alt="Ice-cream with blackburry"
-            />        
+            /> 
+            
+            <img class="gallery__image"
+                srcset="
+                ./images/gallery/img2_t716.jpg 716w,
+                ./images/gallery/img2_t1432@2x.jpg 1432w"
+                sizes="(min-width: 1200px) 1013px, (min-width: 768px) 704px, 
+                (min-width: 480px) 440px, 100vw"
+                src="./images/gallery/img2_t716.jpg"
+                alt="Ice-cream 2"
+            /> 
+        </div>  
     </div>
 </section>
