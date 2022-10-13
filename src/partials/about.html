@@ -18,13 +18,38 @@
                 <p class="about__text">
                     This is enough to choose ice cream and coffee for any mood!
                 </p>
-                <button type="button" class="button button--about">
+                <button type="button" class="button button--about" data-btn="video">
                     Read more
                     <svg class="about__icon" width="12" height="12">
                         <use href="./images/icons.svg#about__icon"></use>
                     </svg>
                 </button>
             </div>
+        </div>
+    </div>
+    <div class="backdrop is-hidden section" id="video">
+        <div class="readme">
+            <button type="button" class="readme__button">
+                <svg class="readme__icon" width="16px" height="16px" data-btn="close">
+                    <use href="./images/close-line-icon.svg#icon-clarity_close-line"></use>
+                </svg>
+            </button>
+            <p class="readme__title">How it’s made?</p>
+            <div class="readme__video-box">
+                <iframe
+                    class="readme__video"
+                    src="https://www.youtube.com/embed/JPvjUKT1pcQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <p class="readme__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et
+            </p>
         </div>
     </div>
 </section>

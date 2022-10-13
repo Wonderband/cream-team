@@ -16,8 +16,8 @@
             />
             <button
                 type="button"
-                class="button__menu is-open"
-                data-mobile__menu-open
+                class="button__menu"
+                data-menu-btn
                 aria-controls="mobile__menu-body"
             >
                 <svg
@@ -45,7 +45,7 @@
                 </button>
             </div>
 
-            <div class="nav__body" id="mobile__menu-body" data-mobile__menu>
+            <div class="nav__body" data-mobile-menu>
                 <nav>
                     <ul class="nav__list">
                         <li class="nav__item">
@@ -57,7 +57,9 @@
                         <li class="nav__item">
                             <a href="#products" class="nav__link">Our products</a>
                         </li>
-                        <li class="nav__item"><a href="" class="nav__link">Contact</a></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Contact</a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="nav__button-body">

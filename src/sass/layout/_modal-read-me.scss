@@ -1,0 +1,78 @@
+// .backdrop {
+//     display: none;
+// }
+
+.readme {
+    position: relative;
+    max-width: 480px;
+
+    margin: auto;
+
+    padding: 28px;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    background-color: $text-color-light;
+    font-weight: 400;
+
+    @media screen and (min-width: 768px) {
+        width: 568px;
+    }
+}
+.readme__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 0;
+    background-color: $text-color-light;
+    cursor: pointer;
+
+    top: 8px;
+    right: 8px;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        height: 20px;
+        width: 20px;
+    }
+}
+.readme_icon {
+    height: 100%;
+    width: 100%;
+}
+.readme__title {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    font-family: $font-family-secondary;
+    color: $text-color-dark;
+}
+.readme__video-box {
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+    }
+}
+.readme__video {
+    width: 224px;
+    border-radius: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 448;
+    }
+}
+.readme__text {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
+    }
+}
