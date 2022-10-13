@@ -1,35 +1,20 @@
 .contacts__section {
     background-image: linear-gradient(to bottom, transparent 345px, $main-background-color 345px);
-
-    @include media-screen(768px) {
-        background-image: linear-gradient(
-            to bottom,
-            transparent 304px,
-            $main-background-color 304px
-        );
-    }
-
-    @include media-screen(1200px) {
-        background-image: linear-gradient(to bottom, transparent 96px, $main-background-color 96px);
-    }
-}
-
-.contacts__container {
     padding-bottom: 39px;
 
     @include media-screen(768px) {
+        background-image: linear-gradient(to bottom, transparent 304px, $main-background-color 304px);
         padding-left: 32px;
         padding-right: 32px;
         padding-bottom: 40px;
     }
-}
 
-.contacts__container {
     @include media-screen(1200px) {
+        background-image: linear-gradient(to bottom, transparent 96px, $main-background-color 96px);
         padding-left: 16px;
         padding-right: 16px;
         padding-bottom: 120px;
-    }
+    }    
 }
 
 .contacts__list {

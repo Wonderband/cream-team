@@ -1,16 +1,19 @@
 .gallery__section {     
     background-image: linear-gradient(
         to bottom,
-        $main-background-color 16%,
-        transparent 16%
+        $main-background-color 10%,
+        transparent 10%
     );
+
+    padding-bottom: 80px;   
 
     @media screen and (min-width: 768px) {
         background-image: linear-gradient(
             to bottom,
-            $main-background-color 50%,
-            transparent 50%
+            $main-background-color 42%,
+            transparent 42%
         );
+        padding-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -19,19 +22,8 @@
             $main-background-color 17%,
             transparent 17%
         );
-    }
-}
-
-.gallery__container {
-    padding-bottom: 80px;    
-
-    @include media-screen(768px) {
-       padding-bottom: 60px;
-    }
-
-    @include media-screen(1200px) {
         padding-bottom: 128px;
-     }
+    }
 }
 
 .gallery__img__container {
