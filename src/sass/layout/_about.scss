@@ -31,6 +31,7 @@
     width: 280px;
     margin-bottom: 40px;
     margin: 0 auto;
+
     background-image: url(../images/about/about_sm.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
@@ -46,10 +47,12 @@
     @media screen and (min-width: 768px) {
         height: 356px;
         width: 336px;
-        background-image: url(../images/about/about_md.png);
         margin-bottom: 0px;
-        background-position: 0 0;
         margin-right: 32px;
+
+        background-image: url(../images/about/about_md.png);
+        background-position: 0 0;
+
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -62,10 +65,12 @@
     @media screen and (min-width: 1200px) {
         height: 529px;
         width: 500px;
-        background-image: url(../images/about/about_lg.png);
-        margin-bottom: 0px;
-        background-position: 0 0;
         margin-right: 100px;
+        margin-bottom: 0px;
+
+        background-image: url(../images/about/about_lg.png);
+        background-position: 0 0;
+
 
         @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
@@ -103,7 +108,6 @@
     }
 }
 
-// Лишка в спике
 .about__text {
     @media screen and (max-width: 320px) {
         width: 220px;

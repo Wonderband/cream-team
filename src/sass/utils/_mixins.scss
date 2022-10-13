@@ -6,5 +6,5 @@
 }
 
 @mixin media-screen($mw) {
-    @media screen and(min-width: $mw) { @content; }
+    @media screen and (min-width: $mw) { @content; }
 }

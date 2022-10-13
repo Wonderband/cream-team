@@ -1,3 +1,13 @@
-.logo {
-    padding-top: 12px;
+.company__logo {
+    z-index: 3;
+
+    width: 40px;
+
+    @media screen and (min-width: 768px) {
+        width: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+    }
 }

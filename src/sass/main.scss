@@ -11,21 +11,20 @@
 @import './components/section';
 @import './components/container';
 @import './components/titles';
-// @import './components/navigation';
 
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
 @import './layout/about';
 @import './layout/advantages';
-@import './layout/contacts';
+@import './layout/gallery';
 @import './layout/customer-reviews';
-@import './layout/example';
+@import './layout/contacts';
 @import './layout/footer';
 @import './layout/gallery';
 @import './layout/hero-header';
-@import './layout/modal_read-me';
 
 @import '../node_modules/hamburgers/_sass/hamburgers/hamburgers';
-
-@import './layout/products';
 
 @import '../../node_modules/swiper/swiper-bundle.css';
 //@import '../../node_modules/swiper/swiper.min.css';

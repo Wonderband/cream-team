@@ -1,0 +1,307 @@
+.main {
+    background-color: $main-background-color;
+}
+
+.hero {
+    padding-top: 61px;
+    padding-bottom: 239px;
+    position: relative;
+    overflow: hidden;
+
+    @media screen and (max-width: 767px) {
+        max-width: 320px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 36px;
+        padding-bottom: 193px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 45px;
+        padding-bottom: 332px;
+    }
+}
+
+.hero__title {
+    color: $text-color-light;
+    font-family: $font-family-secondary;
+    font-size: 26px;
+    line-height: 1.27;
+    font-weight: normal;
+    margin-bottom: 32px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 18px;
+        line-height: 1.28;
+        max-width: 181px;
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+        max-width: 367px;
+        margin-bottom: 28px;
+    }
+}
+
+.hero__bigger-part {
+    font-size: 34px;
+    line-height: 0.97;
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        line-height: 0.54;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 38px;
+        line-height: 1.26;
+    }
+}
+
+.hero__list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 24px;
+
+    @media screen and (min-width: 1200px) {
+        min-height: 42px;
+    }
+}
+
+.hero__button-products {
+    text-decoration: none;
+    padding: 7px 12px;
+    color: $text-color-dark;
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    background-color: transparent;
+
+    transition: color $main-animation, border $main-animation;
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 34px;
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    &:hover {
+        border: 2px solid $hover-color;
+    }
+
+    &:focus {
+        border: 2px solid $hover-color;
+        color: $text-color-light;
+        outline: transparent;
+    }
+}
+
+.hero__button-how {
+    padding: 7px 12px;
+    color: $accent-color;
+    font-size: 8px;
+    line-height: 1.25;
+    font-weight: 600;
+    transition: color $main-animation;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+
+    @media screen and (min-width: 1200px) {
+        padding: 12px 22px;
+        font-size: 14px;
+        line-height: 1.21;
+    }
+
+    &:hover {
+        color: $hover-color;
+    }
+
+    &:focus {
+        color: $text-color-light;
+        outline: transparent;
+    }
+}
+
+.hero__arrow-body {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        bottom: 62px;
+        left: 210px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        bottom: 125px;
+        left: 255px;
+    }
+}
+
+.hero__text {
+    color: $text-color-light;
+    font-size: 12px;
+    line-height: 1.42;
+    max-width: 151px;
+    height: auto;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        max-width: 220px;
+    }
+}
+
+.hero__button-arrow {
+    border: transparent;
+    background-color: transparent;
+    outline: transparent;
+    position: absolute;
+    margin-top: 20px;
+
+    &:hover .hero__button-hov {
+        opacity: 1;
+    }
+
+    &:hover .hero__button-simple {
+        opacity: 0;
+    }
+
+    &:focus .hero__button-foc {
+        opacity: 1;
+    }
+
+    &:focus .hero__button-simple {
+        opacity: 0;
+    }
+}
+
+.button-arrow {
+    transition: opacity $main-animation;
+    position: absolute;
+    fill: $text-color-light;
+    left: 0;
+}
+
+.hero__button-simple {
+    opacity: 1;
+}
+
+.hero__button-hov {
+    opacity: 0;
+}
+
+.hero__button-foc {
+    margin-top: -4px;
+    opacity: 0;
+}
+
+.hero__image-item {
+    pointer-events: none;
+}
+
+.hero__image-plate {
+    position: absolute;
+    z-index: 1;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 28px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 42px;
+    }
+}
+
+.hero__image-circles {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+}
+
+.hero__image-ice {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    @media screen and (max-width: 767px) {
+        left: 85px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        left: 420px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        left: 650px;
+    }
+}
+
+.hero__sales {
+    position: absolute;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 30px;
+        right: 32px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        top: 40px;
+        right: 16px;
+    }
+}
+
+.hero__item-sales {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 16px;
+    }
+}
+
+.hero__number-sales {
+    color: $text-color-dark;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 1.21;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 46px;
+    }
+}
+
+.hero__text-sales {
+    color: $text-color-light;
+    font-size: 8px;
+    line-height: 1.25;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    row-gap: 4px;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.21;
+    }
+}
