@@ -16,7 +16,7 @@ function SlideShow(interval) {
 SlideShow(2000);
 
 function ShowNextImage(num) {
-    if (num > 0) galleryImages[num-1].classList.toggle("show");       
-    else galleryImages[galleryImages.length - 1].classList.toggle("show");   
-    galleryImages[num].classList.toggle("show");
+    galleryImages[num].classList.toggle("show");  
+    if (num + 1 < galleryImages.length) galleryImages[num+1].classList.toggle("show");       
+    else galleryImages[0].classList.toggle("show");     
 }
