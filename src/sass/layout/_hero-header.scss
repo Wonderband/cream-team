@@ -21,6 +21,17 @@ button {
 .company__logo {
     padding-top: 12px;
     z-index: 3;
+    width: 40px;
+    
+    @media screen and (min-width: 768px) {
+        width: 48px;
+        padding-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 60px;
+        padding-top: 8px;
+    }
 }
 
 .button__menu {
@@ -44,7 +55,7 @@ button {
 .button__menu.is-open {
     & .button__menu-open {
         display: block;
-    }
+    } 
 
     & .button__menu-close {
         display: none;
@@ -52,7 +63,7 @@ button {
 }
 
 .nav__body {
-    @media screen and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
         z-index: 2;
         background-color: $main-background-color;
         position: fixed;
@@ -63,19 +74,19 @@ button {
         height: 100%;
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         padding: 100px 22px 0px 23px;
-    
+
         &.is-open {
             transform: translateX(0);
         }
     }
-    
+
     @media screen and (min-width: 1200px) {
         align-items: center;
         display: flex;
         margin-top: auto;
         margin-left: 270px;
     }
-    
+
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         padding: 140px 179px 0px 180px;
     }
@@ -188,6 +199,48 @@ button {
     @media screen and (min-width: 1200px) {
         margin-left: 213px;
     }
+
+    @media screen and (min-width: 767px) and (max-width: 1199px) {
+        display: none;
+    }
+}
+
+.nav__buy-button {
+    display: none;
+    display: flex;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        outline: transparent;
+        border: none;
+        background-color: $accent-color;
+        border-radius: 10px;
+    
+        padding: 12px 34px;
+    
+        color: $text-color-dark;
+        font-weight: 600;
+        line-height: 1.21;
+    
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover {
+            background-color: $hover-color;
+        }
+    
+        &:focus {
+            background-color: $hover-color;
+            color: $text-color-light;
+            fill: $text-color-light;
+        }
+
+    
+        @media screen and (min-width: 767px) and (max-width: 1199px) {
+            display: block;
+            margin-top: 24px;
+            margin-left: 38px;
+        }
+        
 }
 
 .nav__icon-buy {
@@ -195,6 +248,14 @@ button {
 
     @media screen and (min-width: 1200px) {
         margin-left: 11px;
+    }
+}
+
+
+.nav__buy-body {
+    display: none;
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+        display: block;
     }
 }
 
@@ -208,6 +269,7 @@ button {
     padding-top: 61px;
     padding-bottom: 239px;
     position: relative;
+    
 
     @media screen and (max-width: 767px) {
         max-width: 320px;
@@ -511,23 +573,20 @@ button {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
-    /*?? прокрутка модалки ??*/
 
     opacity: 1;
     z-index: 2;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /*transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .backdrop {
     &.is-hidden {
         pointer-events: none;
         opacity: 0;
-        /*transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
 }
 
-.modal { // НОРМ
+.modal { 
     position: absolute;
     top: 50%;
     left: 50%;
@@ -540,10 +599,18 @@ button {
 
     width: 568px;
 
+    height: 644px;
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        width: auto;
+        padding: 28px 28px;
+        height: 986px;
+    }
 }
 
-.modal__close-button { // НОРМА //
+.modal__close-button { 
     background-color: transparent;
     border: none;
     position: absolute;
@@ -552,11 +619,18 @@ button {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    
 
     &:focus {
-        fill: $accent-color;   
+        fill: $accent-color; 
     } 
+
+    @media screen and (max-width: 767px) {
+        top: 8px;
+        right: 8px
+    }
 }
+
 
 .modal__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -568,13 +642,12 @@ button {
 .backdrop.is-hidden {
     & .modal {
         transform: translate(-50%, -50%) scale(0.9);
-        /*transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
 }
 
 /* ОФОРМЛЕНИЕ МОДАЛКИ */
 
-.modal__title { //НОРМА
+.modal__title { 
     display: flex;
     justify-content: center;
     text-align: center;
@@ -584,17 +657,33 @@ button {
     color: $text-color-dark;
 }
 
-.modal__form-field { // НОРМА //
+.modal__form-field { 
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    row-gap: 16px;
+    margin-bottom: 16px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 12px;
+    }
+
+}
+.modal__form-field:nth-last-child(-n+2) {
+    margin-bottom: 32px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 24px;
+    }
 }
 
 .modal__form {
     position: relative;
+
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .modal__form-input {
@@ -608,8 +697,23 @@ button {
     padding: 11px 0px 11px 16px;
     width: 368px;
 
+    @media screen and (max-width: 767px) {
+            width: 224px;
+            font-size: 12px;
+            line-height: 1.42;
+            padding: 8px 12px 7px 12px;
+            min-height: 32px;
+        }
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &::placeholder {
         color: $text-color-dark
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
     }
 }
 
@@ -628,6 +732,21 @@ button {
     padding: 11px 0px 11px 16px;
 
     width: 368px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+
+    @media screen and (max-width: 767px) {
+            width: 100%;
+            height: 65px;
+            font-size: 12px;
+            line-height: 140%;
+            padding: 8px 0px 38px 12px;
+        }
 
     resize: none;
 
@@ -649,7 +768,6 @@ button {
     border-radius: 10px;
     padding: 12px 34px;
     border: none;
-    margin-top: 32px;
     outline: transparent;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -661,6 +779,11 @@ button {
     &:focus {
         background-color: $hover-color;
         color: $text-color-light;
+    }
+
+    @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 1.25;
     }
 
 }
@@ -697,8 +820,12 @@ button {
     gap: 32px;
     margin-top: 103px;
 
-
-
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 84px;
+        margin-top: 84px;
+        margin-bottom: 24px;
+    }
 }
 
 .modal__image-button {
@@ -718,6 +845,10 @@ button {
     filter: drop-shadow(0px 5.26027px 19.726px rgba(212, 20, 67, 0.1));
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0px;
+    }
 
 }
 
@@ -787,9 +918,6 @@ button {
 
     border-color: #efd478;
 
-    // background: linear-gradient(0deg, rgba(248, 210, 78, 0.7), rgba(248, 210, 78, 0.7)), #D9D9D9;
-    //     box-shadow: 0px 5.26027px 19.726px rgba(153, 114, 23, 0.25);
-
     &:hover,
     &:focus {
         background-color: #efd478;
@@ -824,11 +952,31 @@ button {
 
     border-color: #d6936d;
 
-    // background: linear-gradient(0deg, rgba(213, 117, 63, 0.7), rgba(213, 117, 63, 0.7)), #D9D9D9;
-    //     box-shadow: 0px 5.26027px 19.726px rgba(0, 0, 0, 0.25);
-
     &:hover,
     &:focus {
         background-color: #d6936d;
     }
 }
+
+// .modal__ingredients-body {
+//     margin-bottom: 48px;
+// }
+
+// .modal__ingredients-text {
+//     display: flex;
+//     justify-content: space-between;
+// } 
+
+// .modal__form-down {
+//     transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//     transform: translateY(0%);
+    
+// }
+
+// .modal__form-down.is-down { 
+//     transform: translateY(-65%);
+// }
+
+
+

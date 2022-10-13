@@ -36,6 +36,13 @@
     background-position: 50% 0;
     background-size: contain;
 
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url('../images/about/about_sm@2x.png');
+    }
+
     @media screen and (min-width: 768px) {
         height: 356px;
         width: 336px;
@@ -43,6 +50,13 @@
         margin-bottom: 0px;
         background-position: 0 0;
         margin-right: 32px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/about/about_md@2x.png');
+        }
     }
 
     @media screen and (min-width: 1200px) {
@@ -52,8 +66,16 @@
         margin-bottom: 0px;
         background-position: 0 0;
         margin-right: 100px;
+
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url('../images/about/about_lg@2x.png');
+        }
     }
 }
+
 // Список ul
 .about__info {
     display: flex;
@@ -80,12 +102,15 @@
         width: 463px;
     }
 }
+
 // Лишка в спике
 .about__text {
     @media screen and (max-width: 320px) {
         width: 220px;
     }
+
     width: 100%;
+
     &:last-of-type {
         display: none;
     }

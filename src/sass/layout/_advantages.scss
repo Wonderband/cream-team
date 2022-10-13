@@ -84,16 +84,37 @@
     }
 }
 
-.advantages__subtitle.cow::before {
+.advantages__subtitle--cow::before {
     background-image: url("../images/advantages/cow.png");
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {      
+          background-image: url("../images/advantages/cow@2x.png");
+    }     
 }
 
-.advantages__subtitle.weight::before {
+.advantages__subtitle--weight::before {
     background-image: url("../images/advantages/weight.png");
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {      
+          background-image: url("../images/advantages/weight@2x.png");
+    }  
 }
 
-.advantages__subtitle.ice-cream::before{
+.advantages__subtitle--ice-cream::before{
     background-image: url("../images/advantages/icecream.png");
+
+    @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {      
+          background-image: url("../images/advantages/icecream@2x.png");
+    }  
 }
 
 .advantages__description {
