@@ -37,23 +37,20 @@
                 </svg>
             </button>
             <div class="nav__buy-body">
-                <button type="button" class="nav__buy-button">
+                <button data-btn="buy" type="button" class="nav__buy-button">
                     Buy now
-                    <svg class="nav__buy-icon" width="12" height="12">
-                        <use href="./images/icons.svg#about__icon"></use>
+                    <svg data-btn="buy" class="nav__buy-icon" width="12" height="12">
+                        <use data-btn="buy" href="./images/icons.svg#about__icon"></use>
                     </svg>
                 </button>
             </div>
 
-            <!-- <button class="hamburger hamburger--collapse is-active" type="button">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button> -->
             <div class="nav__body" id="mobile__menu-body" data-mobile__menu>
                 <nav>
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="" class="nav__link">Home</a></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__link">Home</a>
+                        </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">How it’s made?</a>
                         </li>
@@ -64,14 +61,70 @@
                     </ul>
                 </nav>
                 <div class="nav__button-body">
-                    <button data-modal-open type="button" class="nav__button-buy">
+                    <button data-btn="buy" data-modal-open type="button" class="nav__button-buy">
                         Buy now
-                        <svg class="nav__icon-buy" width="12" height="12">
-                            <use href="./images/icons.svg#about__icon"></use>
+                        <svg data-btn="buy" class="nav__icon-buy" width="12" height="12">
+                            <use data-btn="buy" href="./images/icons.svg#about__icon"></use>
                         </svg>
                     </button>
                 </div>
             </div>
         </div>
     </section>
+    <div class="backdrop is-hidden" id="buy">
+        <div class="modal">
+            <button class="modal__close-button" type="button" data-btn="close">
+                <svg class="modal__close-icon" width="20" height="20" data-btn="close">
+                    <use href="./images/icons.svg#icon-close-modal" data-btn="close"></use>
+                </svg>
+            </button>
+            <form class="modal__form">
+                <strong class="modal__title">Buy now</strong>
+                <div class="modal__image-body">
+                    <button type="button" class="modal__image-button modal__image-button--green">
+                        ICE CREAM
+                    </button>
+                    <button type="button" class="modal__image-button modal__image-button--yellow">
+                        ICE COFFEE
+                    </button>
+                    <button type="button" class="modal__image-button modal__image-button--brown">
+                        MILKSHAKE
+                    </button>
+                </div>
+                <div class="modal__form-down">
+                    <div class="modal__form-field">
+                        <label class="modal__form-text" for="name"></label>
+                        <input
+                            class="modal__form-input"
+                            type="text"
+                            name="username"
+                            placeholder="Name"
+                        />
+                    </div>
+
+                    <div class="modal__form-field">
+                        <label class="modal__form-text" for="tel"></label>
+                        <input
+                            class="modal__form-input"
+                            type="tel"
+                            name="usertel"
+                            placeholder="Phone"
+                        />
+                    </div>
+                    <div class="modal__form-field modal__form-field--indent-size">
+                        <label class="modal__form-text" for="comment"></label>
+                        <textarea
+                            class="modal__form-textarea"
+                            name="usercomment"
+                            rows="8"
+                            placeholder="Comment"
+                        ></textarea>
+                    </div>
+                    <div class="modal__submit-body">
+                        <button class="modal__submit-button" type="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 </header>
