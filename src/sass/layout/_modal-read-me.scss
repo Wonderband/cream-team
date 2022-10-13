@@ -1,7 +1,3 @@
-// .backdrop {
-//     display: none;
-// }
-
 .readme {
     position: fixed;
     top: 50%;
@@ -10,16 +6,14 @@
 
     margin: auto;
     padding: 28px;
-    width: 280px;
+    max-width: 568px;
+    min-width: 280px;
+    width: calc(100% - 20px);
 
     border: 2px solid $accent-color;
     border-radius: 10px;
     background-color: $text-color-light;
     font-weight: 400;
-
-    @media screen and (min-width: 768px) {
-        max-width: 568px;
-    }
 }
 .readme__button {
     display: flex;
@@ -51,20 +45,17 @@
     text-align: center;
     font-family: $font-family-secondary;
     color: $text-color-dark;
+    margin-bottom: 20px;
 }
 .readme__video-box {
     position: relative;
-    max-width: 224px;
-    height: 0;
+
+    width: 100%;
+
     padding-bottom: 56.25%;
 
     border-radius: 10px;
-    margin-top: 20px;
     overflow: hidden;
-    @media screen and (min-width: 768px) {
-        margin-top: 32px;
-        max-width: 448px;
-    }
 }
 .readme__video {
     position: absolute;
@@ -72,6 +63,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
 .readme__text {
     margin-top: 20px;
