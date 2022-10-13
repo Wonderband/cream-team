@@ -1,8 +1,8 @@
 .readme {
     position: relative;
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+
+    margin: auto;
 
     padding: 28px;
     border: 2px solid $accent-color;
@@ -46,32 +46,20 @@
     color: $text-color-dark;
 }
 .readme__video-box {
-    position: relative;
-    width: 224px;
-    height: 199px;
+    text-align: center;
+    border-radius: 10px;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 10px solid $text-color-dark;
-    overflow: hidden;
 
     @media screen and(min-width: 768px) {
-        width: 448px;
-        height: 205px;
         margin-top: 32px;
     }
 }
 .readme__video {
-    position: absolute;
-    object-fit: contain;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    width: 224px;
+    border-radius: 10px;
 
     @media screen and(min-width: 768px) {
-        width: 100%;
-        height: 100%;
+        width: 448;
     }
 }
 .readme__text {
