@@ -6,14 +6,14 @@
     display: flex;
     align-items: center;
     justify-content: end;
-    height: 64px;
+    padding-top: 12px;
 
     @media screen and (min-width: 768px) {
-        height: 90px;
+        padding-top: 20px;
     }
 
     @media screen and (min-width: 1200px) {
-        height: 100px;
+        padding-top: 18px;
     }
 }
 
@@ -27,19 +27,22 @@
     @media screen and (min-width: 1200px) {
         display: none;
     }
+}
+.button__menu-open {
+    opacity: 1;
+    transition: 300ms;
 
-    .button__menu-open {
-        display: none;
+    .button__menu.is-open & {
+        opacity: 0;
     }
 }
 
-.button__menu.is-open {
-    & .button__menu-open {
-        display: block;
-    }
+.button__menu-close {
+    opacity: 0;
+    transition: 300ms;
 
-    & .button__menu-close {
-        display: none;
+    .button__menu.is-open & {
+        opacity: 1;
     }
 }
 
@@ -68,7 +71,6 @@
     @media screen and (min-width: 1200px) {
         align-items: center;
         display: flex;
-        margin-top: auto;
         margin-left: 270px;
     }
 
