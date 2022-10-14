@@ -238,6 +238,8 @@
     position: absolute;
     bottom: 0%;
     left: 0%;
+    filter: drop-shadow(0 0 30px rgba(252, 252, 252, 0.44))
+        drop-shadow(0 0 20px rgba(252, 252, 252, 0.44));
 
     @media screen and (max-width: 767px) {
         left: 85px;
@@ -304,7 +306,4 @@
         font-size: 14px;
         line-height: 1.21;
     }
-}
-
-.scroll-up {
 }

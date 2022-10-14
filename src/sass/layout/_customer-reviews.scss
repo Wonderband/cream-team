@@ -97,14 +97,14 @@
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 48px;
-    cursor: url('../images/hero-header/cursor.png'), auto;
+    cursor: url('../images/cursor/hand.svg'), auto;
     @media screen and (min-width: 768px) {
         bottom: 80px;
     }
 }
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
-    cursor: url('../images/hero-header/cursor.png'), auto;
+    cursor: url('../images/cursor/hand.svg'), auto;
 }
 
 //МОДАЛКА
