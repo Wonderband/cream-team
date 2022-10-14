@@ -97,8 +97,100 @@
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
     bottom: 48px;
-
+    cursor: url('../images/hero-header/cursor.png'), auto;
     @media screen and (min-width: 768px) {
         bottom: 80px;
+    }
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+    cursor: url('../images/hero-header/cursor.png'), auto;
+}
+
+//МОДАЛКА
+
+.readme {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: auto;
+    padding: 28px;
+    max-width: 568px;
+    min-width: 280px;
+    width: calc(100% - 20px);
+
+    border: 2px solid $accent-color;
+    border-radius: 10px;
+    background-color: $text-color-light;
+    font-weight: 400;
+}
+.readme__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: 0;
+    background-color: $text-color-light;
+
+    outline: transparent;
+
+    transition: fill $main-animation;
+
+    top: 8px;
+    right: 8px;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+
+    @media screen and (min-width: 768px) {
+        height: 20px;
+        width: 20px;
+    }
+
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
+}
+.readme_icon {
+    height: 100%;
+    width: 100%;
+}
+.readme__title {
+    line-height: 1.5;
+    font-size: 16px;
+    text-align: center;
+    font-family: $font-family-secondary;
+    color: $text-color-dark;
+    margin-bottom: 20px;
+}
+.readme__video-box {
+    position: relative;
+
+    width: 100%;
+
+    padding-bottom: 56.25%;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+.readme__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.readme__text {
+    margin-top: 20px;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    line-height: 1.4;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 32px;
     }
 }
