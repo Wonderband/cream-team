@@ -1,15 +1,3 @@
-// window.onload = () =>
-//     window.onscroll = function (e) {
-//         let winY = window.scrollY;
-//         if (winY > 300) {
-//             progressBar():
-
-//             scrollbarAnimation():
-
-//             winY = null
-//         }
-//     }
-
 const scrollBtn = document.querySelector('.isShowBtn');
 
 window.onscroll = () => {
