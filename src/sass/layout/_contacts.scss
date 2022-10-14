@@ -3,18 +3,18 @@
     padding-bottom: 39px;
 
     @include media-screen(768px) {
-        background-image: linear-gradient(to bottom, transparent 304px, $main-background-color 304px);
-        padding-left: 32px;
-        padding-right: 32px;
+        background-image: linear-gradient(
+            to bottom,
+            transparent 304px,
+            $main-background-color 304px
+        );
         padding-bottom: 40px;
     }
 
     @include media-screen(1200px) {
         background-image: linear-gradient(to bottom, transparent 96px, $main-background-color 96px);
-        padding-left: 16px;
-        padding-right: 16px;
         padding-bottom: 120px;
-    }    
+    }
 }
 
 .contacts__list {
@@ -162,18 +162,18 @@
     width: 196px;
     padding-top: 12px;
     padding-bottom: 12px;
-    border: 2px solid $accent-color;    
+    border: 2px solid $accent-color;
     background: transparent;
     transition: color $main-animation, border $main-animation;
 
-    &:hover {        
+    &:hover {
         border-color: $hover-color;
     }
 
     &:focus {
         border-color: $hover-color;
-        color: $text-color-light;        
-    }   
+        color: $text-color-light;
+    }
 }
 
 .contacts__link {
@@ -184,14 +184,13 @@
 
 /* МОДАЛЬНОЕ ОКНО */
 
-
 .backdrop {
     position: fixed;
     top: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    overflow-y: scroll;    
+    overflow-y: scroll;
     /*?? прокрутка модалки ??*/
 
     opacity: 1;
@@ -209,13 +208,15 @@
 }
 
 .backdrop.is-hidden {
-    & .modal_locations, .modal_franchise {
+    & .modal_locations,
+    .modal_franchise {
         transform: translate(-50%, -50%) scale(0.9);
         transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-.modal_locations, .modal_franchise {
+.modal_locations,
+.modal_franchise {
     box-sizing: border-box;
     position: absolute;
     top: 50%;
@@ -227,10 +228,9 @@
     border: 2px solid $accent-color;
     border-radius: 10px;
 
-    width: 280px;    
-   
+    width: 280px;
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   
 
     @include media-screen(768px) {
         width: 568px;
@@ -238,8 +238,8 @@
     }
 }
 
-
-.locations__close-button, .franchise__close-button { 
+.locations__close-button,
+.franchise__close-button {
     background-color: transparent;
     border: none;
     position: absolute;
@@ -251,8 +251,8 @@
     justify-content: center;
 
     &:focus {
-        fill: $accent-color;   
-    } 
+        fill: $accent-color;
+    }
 
     @include media-screen(768px) {
         top: 20px;
@@ -264,7 +264,7 @@
     width: 16px;
     height: 16px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover { 
+    &:hover {
         fill: $accent-color;
     }
 
@@ -274,15 +274,16 @@
     }
 }
 
-.locations__title, .franchise__title {
+.locations__title,
+.franchise__title {
     font-family: $font-family-secondary;
-    @include text-design(400, 16px, calc(24/16), 0.04em);
+    @include text-design(400, 16px, calc(24 / 16), 0.04em);
     margin: 0 auto;
     text-align: center;
     margin-bottom: 20px;
 
     @include media-screen(768px) {
-        @include text-design(400, 20px, calc(28/20), 0.04em);
+        @include text-design(400, 20px, calc(28 / 20), 0.04em);
         width: 322px;
     }
 }
@@ -300,7 +301,7 @@
 }
 
 .franchise__text {
-    @include text-design(400, 14px, calc(20/14), 0.04em);
+    @include text-design(400, 14px, calc(20 / 14), 0.04em);
     margin-bottom: 24px;
 
     @include media-screen(768px) {
@@ -313,27 +314,27 @@
     height: 199px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("../images/contacts/map.jpg");
+    background-image: url('../images/contacts/map.jpg');
 
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {      
-        background-image: url("../images/contacts/map@2x.jpg");
-    }   
-   
+        (min-resolution: 2dppx) {
+        background-image: url('../images/contacts/map@2x.jpg');
+    }
+
     margin-bottom: 24px;
 
     @include media-screen(768px) {
         height: 260px;
-        background-image: url("../images/contacts/big_map.jpg");
+        background-image: url('../images/contacts/big_map.jpg');
 
         @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {      
-        background-image: url("../images/contacts/big_map@2x.jpg");
-        } 
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            background-image: url('../images/contacts/big_map@2x.jpg');
+        }
 
         margin-bottom: 32px;
     }
@@ -344,8 +345,8 @@
     margin: 0 auto;
     min-width: 134px;
     padding: 12px 34px;
-    text-align: center;   
-    @include text-design(600, 12px, calc(15/12), 0.04em);
+    text-align: center;
+    @include text-design(600, 12px, calc(15 / 12), 0.04em);
     border: none;
     outline: none;
     transition: background-color $main-animation, color $main-animation;
@@ -362,7 +363,6 @@
     }
 
     @include media-screen(768px) {
-        @include text-design(600, 14px, calc(17/14), 0.04em);
+        @include text-design(600, 14px, calc(17 / 14), 0.04em);
     }
 }
-
