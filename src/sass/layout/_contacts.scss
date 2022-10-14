@@ -39,7 +39,7 @@
 
 .contacts__card {
     width: 100%;
-    background: #fcfcfc;
+    background: $text-color-light;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
     padding: 40px 32px;
@@ -81,6 +81,15 @@
 
 .contacts__text--address {
     color: $products__list-bg-color-3;
+    text-decoration: none;
+    outline: none;
+
+    transition: color $main-animation;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 
     @include media-screen(1200px) {
         line-height: calc(29 / 16);
@@ -173,6 +182,7 @@
     &:focus {
         border-color: $hover-color;
         color: $text-color-light;
+        outline: none;
     }
 }
 
@@ -180,6 +190,14 @@
     display: block;
     text-decoration: none;
     color: $text-color-dark;
+
+    transition: color $main-animation;
+    outline: none;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
 /* МОДАЛЬНОЕ ОКНО */
@@ -191,19 +209,16 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     overflow-y: scroll;
-    /*?? прокрутка модалки ??*/
 
     opacity: 1;
     z-index: 2;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /*transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);*/
 }
 
 .backdrop {
     &.is-hidden {
         pointer-events: none;
         opacity: 0;
-        /*transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);*/
     }
 }
 
@@ -249,6 +264,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    outline: none;
 
     &:focus {
         fill: $accent-color;

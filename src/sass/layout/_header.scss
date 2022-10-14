@@ -277,6 +277,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    outline: none;
 
     &:focus {
         fill: $accent-color;
@@ -529,6 +530,7 @@
     &:hover,
     &:focus {
         background-color: $modal__card-green;
+        outline: transparent;
     }
 }
 
@@ -561,6 +563,7 @@
     &:hover,
     &:focus {
         background-color: #efd478;
+        outline: transparent;
     }
 }
 
@@ -593,5 +596,39 @@
     &:hover,
     &:focus {
         background-color: #d6936d;
+        outline: transparent;
     }
+}
+
+// СКРОЛЛ АП
+
+#scroll-up {
+    position: fixed;
+
+    z-index: 100;
+    bottom: 25px;
+    right: 17px;
+
+    background-color: $main-background-color;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid $accent-color;
+
+    transition: opacity $main-animation;
+}
+
+.isShowBtn {
+    opacity: 0.7;
+
+    &:hover {
+        opacity: 1;
+    }
+
+    &--hide {
+        opacity: 0;
+    }
+}
+
+.scroll-up-icon {
+    fill: $accent-color;
 }
