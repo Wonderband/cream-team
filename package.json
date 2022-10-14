@@ -21,7 +21,7 @@
         "hamburgers": "^1.2.1",
         "jquery": "^3.6.1",
         "modern-normalize": "^1.1.0",
-        "swiper": "^8.4.3"
+        "swiper": "^8.4.4"
     },
     "devDependencies": {
         "@parcel/css": "^1.14.0",

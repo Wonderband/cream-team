@@ -91,3 +91,14 @@
     --swiper-pagination-bullet-horizontal-gap: 9px;
     --swiper-pagination-color: #84a178;
 }
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 48px;
+
+    @media screen and (min-width: 768px) {
+        bottom: 80px;
+    }
+}
